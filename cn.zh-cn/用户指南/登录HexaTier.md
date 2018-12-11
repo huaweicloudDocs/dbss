@@ -51,15 +51,16 @@
 ## 在数据库安全服务界面通过互联网登录<a name="section59621770151056"></a>
 
 1.  登录管理控制台。
-2.  单击页面上方的“服务列表“，选择“安全“  \>  “数据库安全服务 DBSS“，进入数据库安全服务界面。
+2.  单击页面上方的“服务列表“，选择“安全  \>  数据库安全服务 DBSS“，进入数据库安全服务界面。
 3.  在需要登录HexaTier的实例页面框中，单击“登录“，如[图1](#fig025582318449)所示，系统跳转到该实例的HexaTier登录界面。
 
     **图 1**  登录HexaTier<a name="fig025582318449"></a>  
     ![](figures/登录HexaTier.png "登录HexaTier")
 
-4.  输入HexaTier的登录用户名**admin**和密码，单击“登录“或按“Enter“，进入HexaTier。
+4.  输入HexaTier的登录用户名**admin**和密码，单击“登录“或按“Enter“，如[图2](#fig254142319571)所示，进入HexaTier。
 
-    ![](figures/HexaTier登录页面.png)
+    **图 2**  HexaTier登录界面<a name="fig254142319571"></a>  
+    ![](figures/HexaTier登录界面.png "HexaTier登录界面")
 
 
 ## 使用同一虚拟私有云中的弹性云服务器登录<a name="section4560884124237"></a>
@@ -68,9 +69,10 @@
     -   是：执行[2](#l7ab55acbe3894374a66e9e390f362f36)。
     -   否：在该虚拟机私有云下创建弹性云服务器后，执行[2](#l7ab55acbe3894374a66e9e390f362f36)。
 
-2.  <a name="l7ab55acbe3894374a66e9e390f362f36"></a>使用满足[表2](#t505be23c06ee4bbabed5ab52f8a9539a)要求的浏览器，输入以下地址后。按“Enter“，进入HexaTier的登录界面。
-    
+2.  <a name="l7ab55acbe3894374a66e9e390f362f36"></a>使用满足[表2](#t505be23c06ee4bbabed5ab52f8a9539a)要求的浏览器，输入以下地址后，按“Enter“，进入HexaTier的登录界面。
+
     https://_弹性云服务器的私有IP_:5000
+
     >![](public_sys-resources/icon-notice.gif) **注意：**   
     >如果不能访问“5000“端口，则需要在安全组中添加TCP（Transmission Control Protocol）的“5000“端口访问权限。详细操作，请参见《虚拟私有云用户指南》。  
 
@@ -103,6 +105,6 @@
 
 3.  输入HexaTier的登录用户名**admin**和密码，单击“登录“或按“Enter“，进入HexaTier。
 
-    ![](figures/HexaTier登录页面.png)
+    ![](figures/HexaTier登录界面.png)
 
 

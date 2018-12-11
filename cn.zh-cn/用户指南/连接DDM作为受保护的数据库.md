@@ -118,7 +118,7 @@ HexaTier支持以DDM作为受保护的数据库，并提供相应防护功能。
         <tr id="zh-cn_topic_0115979488_row13907753134614"><td class="cellrowborder" valign="top" width="24.81%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0115979488_p49077530469"><a name="zh-cn_topic_0115979488_p49077530469"></a><a name="zh-cn_topic_0115979488_p49077530469"></a>端口</p>
         </td>
         <td class="cellrowborder" valign="top" width="75.19%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0115979488_p1907115310467"><a name="zh-cn_topic_0115979488_p1907115310467"></a><a name="zh-cn_topic_0115979488_p1907115310467"></a>端口为HexaTier的连接端口，建议与数据库端口相同，若相同端口已占用，用户可以配置除0~1023、5000和其他已占用端口之外的任一可用端口。</p>
-        <div class="note" id="zh-cn_topic_0115979488_note29071253144613"><a name="zh-cn_topic_0115979488_note29071253144613"></a><a name="zh-cn_topic_0115979488_note29071253144613"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="zh-cn_topic_0115979488_p169071653164616"><a name="zh-cn_topic_0115979488_p169071653164616"></a><a name="zh-cn_topic_0115979488_p169071653164616"></a>建议用户为DDM实例的多个连接地址配置相同的代理端口。</p>
+        <div class="note" id="zh-cn_topic_0115979488_note29071253144613"><a name="zh-cn_topic_0115979488_note29071253144613"></a><a name="zh-cn_topic_0115979488_note29071253144613"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="zh-cn_topic_0115979488_p169071653164616"><a name="zh-cn_topic_0115979488_p169071653164616"></a><a name="zh-cn_topic_0115979488_p169071653164616"></a>建议用户为DDM实例的多个连接地址配置相同的代理端口。</p>
         </div></div>
         </td>
         </tr>
@@ -150,10 +150,11 @@ HexaTier支持以DDM作为受保护的数据库，并提供相应防护功能。
 
     -   配置数据库安全策略，请参见[配置数据库安全策略](数据库安全策略简介.md#ZH-CN_TOPIC_0111166347)。
     -   配置敏感数据发现策略，请参见[配置敏感数据发现策略](敏感数据发现策略简介.md#ZH-CN_TOPIC_0111166439)。
+    -   配置数据库防拖库策略，请参见[配置数据库防拖库策略](数据库防拖库策略简介.md#ZH-CN_TOPIC_0142535566)。
     -   配置数据库活动监控策略，请参见[配置数据库活动监控策略](数据库活动监控策略简介.md#ZH-CN_TOPIC_0111166432)。
+    -   配置动态数据脱敏策略，请参见[配置动态数据脱敏策略](动态数据脱敏策略简介.md#ZH-CN_TOPIC_0111166471)。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   当前不支持对DDM的动态数据脱敏策略。  
     >-   当前不支持创建基于DDM存储过程的数据库防火墙策略和活动监控策略。  
     >-   其他相关配置请参见相应章节。  
 
@@ -168,10 +169,7 @@ HexaTier支持以DDM作为受保护的数据库，并提供相应防护功能。
     -   DBSS专业版：支持4个数据库实例，即支持DDM至多有4个连接地址。
     -   DBSS高级版：支持8个数据库实例，即支持DDM至多有8个连接地址。
 
--   当前DDM仅支持MySQL的部分语法，所以存在以下限制：
-    -   对于DDM不支持的MySQL语法， DBSS代理可正常转发，但是DDM端会返回错误。
-    -   DBSS对DDM不支持脱敏特性。
-
+-   当前DDM仅支持MySQL的部分语法，对于DDM不支持的MySQL语法， DBSS代理可正常转发，但是DDM端会返回错误。
 -   DDM不支持视图、函数及存储过程，因此DBSS服务对DDM也不支持视图、函数及存储过程。
 -   当前DBSS版本不支持以DDM作为日志存储位置。
 -   DDM用户不同于MySQL数据库用户，DBSS无法获取DDM用户列表，也不能生成数据库用户相关的报告。

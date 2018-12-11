@@ -4,8 +4,8 @@
 
 HexaTier关键的配置操作说明及流程如[图1](#fig18350802165225)所示。
 
-**图 1**  配置流程<a name="fig18350802165225"></a>  
-![](figures/配置流程.png "配置流程")
+**图 1**  HexaTier配置流程<a name="fig18350802165225"></a>  
+![](figures/HexaTier配置流程.png "HexaTier配置流程")
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >关于配置策略对象的详细操作，请参见[配置策略对象](策略对象简介.md)。  
