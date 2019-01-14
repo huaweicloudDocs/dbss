@@ -4,38 +4,50 @@
 
 云审计服务支持的DBSS操作列表如[表1](#table52008441163754)所示。
 
-**表 1**  云审计服务支持的DBSS操作列表
+**表 1**  云审计服务支持的数据库安全服务操作列表
 
 <a name="table52008441163754"></a>
-<table><thead align="left"><tr id="row35586605163754"><th class="cellrowborder" valign="top" width="23.73%" id="mcps1.2.3.1.1"><p id="p63942737163754"><a name="p63942737163754"></a><a name="p63942737163754"></a>操作名称</p>
+<table><thead align="left"><tr id="zh-cn_topic_0111166559_row35586605163754"><th class="cellrowborder" valign="top" width="35.55%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0111166559_p63942737163754"><a name="zh-cn_topic_0111166559_p63942737163754"></a><a name="zh-cn_topic_0111166559_p63942737163754"></a>操作名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="76.27000000000001%" id="mcps1.2.3.1.2"><p id="p16413837105650"><a name="p16413837105650"></a><a name="p16413837105650"></a>说明</p>
+<th class="cellrowborder" valign="top" width="23.169999999999998%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0111166559_p16413837105650"><a name="zh-cn_topic_0111166559_p16413837105650"></a><a name="zh-cn_topic_0111166559_p16413837105650"></a>资源类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="41.28%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0111166559_p11065000163754"><a name="zh-cn_topic_0111166559_p11065000163754"></a><a name="zh-cn_topic_0111166559_p11065000163754"></a>事件名称</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row22991462155616"><td class="cellrowborder" valign="top" width="23.73%" headers="mcps1.2.3.1.1 "><p id="p16295740161520"><a name="p16295740161520"></a><a name="p16295740161520"></a>createInstance</p>
+<tbody><tr id="zh-cn_topic_0111166559_row22991462155616"><td class="cellrowborder" valign="top" width="35.55%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0111166559_p65646959155616"><a name="zh-cn_topic_0111166559_p65646959155616"></a><a name="zh-cn_topic_0111166559_p65646959155616"></a>创建实例</p>
 </td>
-<td class="cellrowborder" valign="top" width="76.27000000000001%" headers="mcps1.2.3.1.2 "><p id="p59026800165451"><a name="p59026800165451"></a><a name="p59026800165451"></a>创建DBSS实例</p>
+<td class="cellrowborder" valign="top" width="23.169999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0111166559_p59026800165451"><a name="zh-cn_topic_0111166559_p59026800165451"></a><a name="zh-cn_topic_0111166559_p59026800165451"></a>dbss</p>
 </td>
-</tr>
-<tr id="row61812375155616"><td class="cellrowborder" valign="top" width="23.73%" headers="mcps1.2.3.1.1 "><p id="p12296194081519"><a name="p12296194081519"></a><a name="p12296194081519"></a>deleteInstance</p>
-</td>
-<td class="cellrowborder" valign="top" width="76.27000000000001%" headers="mcps1.2.3.1.2 "><p id="p4786566165455"><a name="p4786566165455"></a><a name="p4786566165455"></a>删除DBSS实例</p>
+<td class="cellrowborder" valign="top" width="41.28%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0111166559_p27686863155616"><a name="zh-cn_topic_0111166559_p27686863155616"></a><a name="zh-cn_topic_0111166559_p27686863155616"></a>createInstance</p>
 </td>
 </tr>
-<tr id="row38095708155616"><td class="cellrowborder" valign="top" width="23.73%" headers="mcps1.2.3.1.1 "><p id="p17297740181517"><a name="p17297740181517"></a><a name="p17297740181517"></a>startInstance</p>
+<tr id="zh-cn_topic_0111166559_row61812375155616"><td class="cellrowborder" valign="top" width="35.55%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0111166559_p52180953155616"><a name="zh-cn_topic_0111166559_p52180953155616"></a><a name="zh-cn_topic_0111166559_p52180953155616"></a>删除实例</p>
 </td>
-<td class="cellrowborder" valign="top" width="76.27000000000001%" headers="mcps1.2.3.1.2 "><p id="p12500923155616"><a name="p12500923155616"></a><a name="p12500923155616"></a>开启DBSS实例</p>
+<td class="cellrowborder" valign="top" width="23.169999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0111166559_p4786566165455"><a name="zh-cn_topic_0111166559_p4786566165455"></a><a name="zh-cn_topic_0111166559_p4786566165455"></a>dbss</p>
 </td>
-</tr>
-<tr id="row36966343155616"><td class="cellrowborder" valign="top" width="23.73%" headers="mcps1.2.3.1.1 "><p id="p19298114041514"><a name="p19298114041514"></a><a name="p19298114041514"></a>stopInstance</p>
-</td>
-<td class="cellrowborder" valign="top" width="76.27000000000001%" headers="mcps1.2.3.1.2 "><p id="p54846190155616"><a name="p54846190155616"></a><a name="p54846190155616"></a>关闭DBSS实例</p>
+<td class="cellrowborder" valign="top" width="41.28%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0111166559_p1643209155616"><a name="zh-cn_topic_0111166559_p1643209155616"></a><a name="zh-cn_topic_0111166559_p1643209155616"></a>deleteInstance</p>
 </td>
 </tr>
-<tr id="row62477845155616"><td class="cellrowborder" valign="top" width="23.73%" headers="mcps1.2.3.1.1 "><p id="p129915408151"><a name="p129915408151"></a><a name="p129915408151"></a>rebootInstance</p>
+<tr id="zh-cn_topic_0111166559_row38095708155616"><td class="cellrowborder" valign="top" width="35.55%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0111166559_p51158909155616"><a name="zh-cn_topic_0111166559_p51158909155616"></a><a name="zh-cn_topic_0111166559_p51158909155616"></a>开启实例</p>
 </td>
-<td class="cellrowborder" valign="top" width="76.27000000000001%" headers="mcps1.2.3.1.2 "><p id="p45509463155616"><a name="p45509463155616"></a><a name="p45509463155616"></a>重启DBSS实例</p>
+<td class="cellrowborder" valign="top" width="23.169999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0111166559_p12500923155616"><a name="zh-cn_topic_0111166559_p12500923155616"></a><a name="zh-cn_topic_0111166559_p12500923155616"></a>dbss</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.28%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0111166559_p9980484155616"><a name="zh-cn_topic_0111166559_p9980484155616"></a><a name="zh-cn_topic_0111166559_p9980484155616"></a>startInstance</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0111166559_row36966343155616"><td class="cellrowborder" valign="top" width="35.55%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0111166559_p20363548155616"><a name="zh-cn_topic_0111166559_p20363548155616"></a><a name="zh-cn_topic_0111166559_p20363548155616"></a>关闭实例</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.169999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0111166559_p54846190155616"><a name="zh-cn_topic_0111166559_p54846190155616"></a><a name="zh-cn_topic_0111166559_p54846190155616"></a>dbss</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.28%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0111166559_p27978950155616"><a name="zh-cn_topic_0111166559_p27978950155616"></a><a name="zh-cn_topic_0111166559_p27978950155616"></a>stopInstance</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0111166559_row62477845155616"><td class="cellrowborder" valign="top" width="35.55%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0111166559_p5733644155616"><a name="zh-cn_topic_0111166559_p5733644155616"></a><a name="zh-cn_topic_0111166559_p5733644155616"></a>重启实例</p>
+</td>
+<td class="cellrowborder" valign="top" width="23.169999999999998%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0111166559_p45509463155616"><a name="zh-cn_topic_0111166559_p45509463155616"></a><a name="zh-cn_topic_0111166559_p45509463155616"></a>dbss</p>
+</td>
+<td class="cellrowborder" valign="top" width="41.28%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0111166559_p4123095155616"><a name="zh-cn_topic_0111166559_p4123095155616"></a><a name="zh-cn_topic_0111166559_p4123095155616"></a>rebootInstance</p>
 </td>
 </tr>
 </tbody>
