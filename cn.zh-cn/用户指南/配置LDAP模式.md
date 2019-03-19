@@ -2,10 +2,6 @@
 
 配置LDAP集成模式表示HexaTier通过LDAP服务器进行身份验证。只有在系统中配置了LDAP集成模式之后才能添加活动目录用户。
 
-## 操作场景<a name="zh-cn_topic_0110574973_s395d32027447478a958606ffe3ebba53"></a>
-
-该任务指导用户配置LDAP集成模式。
-
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >LDAP默认采用SSL连接。  
 

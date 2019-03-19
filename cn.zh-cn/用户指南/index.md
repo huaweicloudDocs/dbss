@@ -5,7 +5,7 @@
     -   [查看云审计日志](查看云审计日志.md)
 
 -   [使用HexaTier前必读]
-    -   [HexaTier与DBSS实例的关系HexaTier与DBSS实例的关系](HexaTier与DBSS实例的关系.md)
+    -   [HexaTier与数据库安全防护实例的关系](HexaTier与数据库安全防护实例的关系.md)
     -   [了解HexaTier界面]
         -   [HexaTier界面介绍](HexaTier界面介绍.md)
         -   [仪表盘介绍](仪表盘介绍.md)
@@ -119,10 +119,10 @@
         -   [密钥管理系统](密钥管理系统.md)
 
 
--   [DBSS相关操作]
+-   [数据库安全防护相关操作]
     -   [升级服务版本](升级服务版本.md)
     -   [解绑弹性IP](解绑弹性IP.md)
-    -   [管理DBSS实例](管理DBSS实例.md)
+    -   [管理数据库安全防护实例](管理数据库安全防护实例.md)
 
 -   [故障排查]
     -   [无法登录HexaTier](无法登录HexaTier.md)

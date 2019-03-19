@@ -1,6 +1,6 @@
 # HexaTier配置流程<a name="ZH-CN_TOPIC_0111166458"></a>
 
-登录HexaTier后，需要在HexaTier上对DBSS实例进行安全防护配置操作，才可以对接华为云上的数据库，对数据库提供防护和审计功能。
+登录HexaTier后，需要在HexaTier上对数据库安全防护实例进行安全防护配置操作，才可以对接华为云上的数据库，对数据库提供防护和审计功能。
 
 HexaTier的配置流程如[图1](#fig18350802165225)所示，流程说明如[表1](#table443217583618)所示。
 
@@ -22,7 +22,7 @@ HexaTier的配置流程如[图1](#fig18350802165225)所示，流程说明如[表
 </td>
 <td class="cellrowborder" valign="top" width="26.162616261626166%" headers="mcps1.2.4.1.2 "><p id="p1543216553611"><a name="p1543216553611"></a><a name="p1543216553611"></a><a href="登录HexaTier.md">登录HexaTier</a></p>
 </td>
-<td class="cellrowborder" valign="top" width="67.47674767476747%" headers="mcps1.2.4.1.3 "><p id="p16432452361"><a name="p16432452361"></a><a name="p16432452361"></a>登录HexaTier后，对DBSS实例进行配置管理，实现数据库的安全防护。</p>
+<td class="cellrowborder" valign="top" width="67.47674767476747%" headers="mcps1.2.4.1.3 "><p id="p123215550392"><a name="p123215550392"></a><a name="p123215550392"></a>登录HexaTier后，对数据库安全防护实例进行配置管理，实现数据库的安全防护。</p>
 </td>
 </tr>
 <tr id="row14423186183810"><td class="cellrowborder" valign="top" width="6.360636063606361%" headers="mcps1.2.4.1.1 "><p id="p144239614388"><a name="p144239614388"></a><a name="p144239614388"></a>2</p>

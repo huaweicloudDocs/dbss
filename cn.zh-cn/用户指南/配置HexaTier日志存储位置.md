@@ -2,45 +2,43 @@
 
 为满足合规性要求，HexaTier采用远程存储的方式保存日志，供后续审计及取证使用。用户在配置日志存储位置之后，可以启用监控功能、防拖库功能和查看日志记录。
 
-## 背景信息<a name="zh-cn_topic_0110574955_sfa3c44b1b5b745bf927b186802f10439"></a>
-
 用户可以查看下列类型的日志：
 
-<a name="zh-cn_topic_0110574955_tbd0a31ae614e44abb4e6d40fb915c542"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0110574955_rffe799b50dad4e5b8df9c193e6ad92c5"><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p id="zh-cn_topic_0110574955_a8fc9ac8ad93c4e7c88aca6661b35eb72"><a name="zh-cn_topic_0110574955_a8fc9ac8ad93c4e7c88aca6661b35eb72"></a><a name="zh-cn_topic_0110574955_a8fc9ac8ad93c4e7c88aca6661b35eb72"></a>日志类型</p>
+<a name="zh-cn_topic_0110574955_table10199314164311"></a>
+<table><thead align="left"><tr id="zh-cn_topic_0110574955_row16200141411437"><th class="cellrowborder" valign="top" width="15%" id="mcps1.1.3.1.1"><p id="zh-cn_topic_0110574955_p6200121454316"><a name="zh-cn_topic_0110574955_p6200121454316"></a><a name="zh-cn_topic_0110574955_p6200121454316"></a>日志类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p id="zh-cn_topic_0110574955_a4c6ffe94bf504001b9381592b62781da"><a name="zh-cn_topic_0110574955_a4c6ffe94bf504001b9381592b62781da"></a><a name="zh-cn_topic_0110574955_a4c6ffe94bf504001b9381592b62781da"></a>说明</p>
+<th class="cellrowborder" valign="top" width="85%" id="mcps1.1.3.1.2"><p id="zh-cn_topic_0110574955_p112001614144318"><a name="zh-cn_topic_0110574955_p112001614144318"></a><a name="zh-cn_topic_0110574955_p112001614144318"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0110574955_r383360e8e31a4da094e2802a213ee620"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_ad69108ee67bd45f08091ade5f93479c0"><a name="zh-cn_topic_0110574955_ad69108ee67bd45f08091ade5f93479c0"></a><a name="zh-cn_topic_0110574955_ad69108ee67bd45f08091ade5f93479c0"></a>流量日志</p>
+<tbody><tr id="zh-cn_topic_0110574955_row4200814174318"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p42001149433"><a name="zh-cn_topic_0110574955_p42001149433"></a><a name="zh-cn_topic_0110574955_p42001149433"></a>流量日志</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_a949993fb48bb46f993fea9648f838d15"><a name="zh-cn_topic_0110574955_a949993fb48bb46f993fea9648f838d15"></a><a name="zh-cn_topic_0110574955_a949993fb48bb46f993fea9648f838d15"></a>满足规则定义条件的所有事件都会显示在流量日志中。查看流量日志，请参见<a href="管理安全日志.md#ZH-CN_TOPIC_0111166530">管理安全日志</a>。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0110574955_rfaf9f5e6f740419ba2234779360100e3"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_a28772a9fb9c3412593a78adb80a14458"><a name="zh-cn_topic_0110574955_a28772a9fb9c3412593a78adb80a14458"></a><a name="zh-cn_topic_0110574955_a28772a9fb9c3412593a78adb80a14458"></a>入侵日志</p>
-</td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_af6dcb3390f8c455b95310c53a58025f4"><a name="zh-cn_topic_0110574955_af6dcb3390f8c455b95310c53a58025f4"></a><a name="zh-cn_topic_0110574955_af6dcb3390f8c455b95310c53a58025f4"></a>当识别到SQL注入攻击时，被识别或被阻止的查询列表。查看入侵日志，请参见<a href="管理安全日志.md#ZH-CN_TOPIC_0111166530">管理安全日志</a>。</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p132001414174312"><a name="zh-cn_topic_0110574955_p132001414174312"></a><a name="zh-cn_topic_0110574955_p132001414174312"></a>满足规则定义条件的所有事件都会显示在流量日志中。查看流量日志，请参见<a href="管理安全日志.md#ZH-CN_TOPIC_0111166530">管理安全日志</a>。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0110574955_row19508430195114"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p1650853015111"><a name="zh-cn_topic_0110574955_p1650853015111"></a><a name="zh-cn_topic_0110574955_p1650853015111"></a>防拖库日志</p>
+<tr id="zh-cn_topic_0110574955_row920081413439"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p1220031420437"><a name="zh-cn_topic_0110574955_p1220031420437"></a><a name="zh-cn_topic_0110574955_p1220031420437"></a>入侵日志</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p050973018511"><a name="zh-cn_topic_0110574955_p050973018511"></a><a name="zh-cn_topic_0110574955_p050973018511"></a>由防拖库规则生成的防拖库事件日志。查看防拖库日志，请参见<a href="查看防拖库事件日志.md#ZH-CN_TOPIC_0142535568">查看防拖库事件日志</a>。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0110574955_r040ff601c10e4212af03e3c797dcffe1"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_zh-cn_topic_0076429733_p834665075411"><a name="zh-cn_topic_0110574955_zh-cn_topic_0076429733_p834665075411"></a><a name="zh-cn_topic_0110574955_zh-cn_topic_0076429733_p834665075411"></a>监控日志</p>
-</td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_a03bc50f06aeb474090ddb7946ef7566b"><a name="zh-cn_topic_0110574955_a03bc50f06aeb474090ddb7946ef7566b"></a><a name="zh-cn_topic_0110574955_a03bc50f06aeb474090ddb7946ef7566b"></a>由活动监控规则生成的监控事件日志。查看监控日志，请参见<a href="查看活动监控事件日志.md#ZH-CN_TOPIC_0111166505">查看活动监控事件日志</a>。</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p16200131434311"><a name="zh-cn_topic_0110574955_p16200131434311"></a><a name="zh-cn_topic_0110574955_p16200131434311"></a>当识别到SQL注入攻击时，被识别或被阻止的查询列表。查看入侵日志，请参见<a href="管理安全日志.md#ZH-CN_TOPIC_0111166530">管理安全日志</a>。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0110574955_ra26b2beb9b594e1ebe1d3cd8fdad1218"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_aede8100af93d4ebc9198c02be012d6c1"><a name="zh-cn_topic_0110574955_aede8100af93d4ebc9198c02be012d6c1"></a><a name="zh-cn_topic_0110574955_aede8100af93d4ebc9198c02be012d6c1"></a>脱敏日志</p>
+<tr id="zh-cn_topic_0110574955_row620051410431"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p152001114164312"><a name="zh-cn_topic_0110574955_p152001114164312"></a><a name="zh-cn_topic_0110574955_p152001114164312"></a>防拖库日志</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_aa1acac0228034169a4d020aa69794ed5"><a name="zh-cn_topic_0110574955_aa1acac0228034169a4d020aa69794ed5"></a><a name="zh-cn_topic_0110574955_aa1acac0228034169a4d020aa69794ed5"></a>由脱敏规则生成的脱敏事件日志。查看脱敏日志，请参见<a href="查看数据脱敏事件日志.md#ZH-CN_TOPIC_0111166459">查看数据脱敏事件日志</a>。</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p8200141415430"><a name="zh-cn_topic_0110574955_p8200141415430"></a><a name="zh-cn_topic_0110574955_p8200141415430"></a>由防拖库规则生成的防拖库事件日志。查看防拖库日志，请参见<a href="查看防拖库事件日志.md#ZH-CN_TOPIC_0142535568">查看防拖库事件日志</a>。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0110574955_re54d00a833a64ce488b3f800467812f8"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_a1b5358d7a20d47a8b03a43509ed1fa28"><a name="zh-cn_topic_0110574955_a1b5358d7a20d47a8b03a43509ed1fa28"></a><a name="zh-cn_topic_0110574955_a1b5358d7a20d47a8b03a43509ed1fa28"></a>系统日志</p>
+<tr id="zh-cn_topic_0110574955_row172001114164312"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p122001414184316"><a name="zh-cn_topic_0110574955_p122001414184316"></a><a name="zh-cn_topic_0110574955_p122001414184316"></a>监控日志</p>
 </td>
-<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_a6996b76e94334d48b0a116a314e304f5"><a name="zh-cn_topic_0110574955_a6996b76e94334d48b0a116a314e304f5"></a><a name="zh-cn_topic_0110574955_a6996b76e94334d48b0a116a314e304f5"></a>HexaTier管理控制台活动的详细信息。查看系统日志，请参见<a href="查看系统日志.md#ZH-CN_TOPIC_0111166506">查看系统日志</a>。</p>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p13200171412436"><a name="zh-cn_topic_0110574955_p13200171412436"></a><a name="zh-cn_topic_0110574955_p13200171412436"></a>由活动监控规则生成的监控事件日志。查看监控日志，请参见<a href="查看活动监控事件日志.md#ZH-CN_TOPIC_0111166505">查看活动监控事件日志</a>。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0110574955_row2020091414433"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p1720014146431"><a name="zh-cn_topic_0110574955_p1720014146431"></a><a name="zh-cn_topic_0110574955_p1720014146431"></a>脱敏日志</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p4200714114313"><a name="zh-cn_topic_0110574955_p4200714114313"></a><a name="zh-cn_topic_0110574955_p4200714114313"></a>由脱敏规则生成的脱敏事件日志。查看脱敏日志，请参见<a href="查看数据脱敏事件日志.md#ZH-CN_TOPIC_0111166459">查看数据脱敏事件日志</a>。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0110574955_row16200111415433"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.1.3.1.1 "><p id="zh-cn_topic_0110574955_p102001114104315"><a name="zh-cn_topic_0110574955_p102001114104315"></a><a name="zh-cn_topic_0110574955_p102001114104315"></a>系统日志</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.1.3.1.2 "><p id="zh-cn_topic_0110574955_p142009140436"><a name="zh-cn_topic_0110574955_p142009140436"></a><a name="zh-cn_topic_0110574955_p142009140436"></a>HexaTier管理控制台活动的详细信息。查看系统日志，请参见<a href="查看系统日志.md#ZH-CN_TOPIC_0111166506">查看系统日志</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -57,7 +55,7 @@
 >    系统变量LOCAL\_INFILE控制服务器端的本地功能。将“LOCAL\_INFILE“设置为“ON“（启用）将强制服务器允许客户端加载本地数据。  
 >-   设置全局变量LOG\_BIN\_TRUST\_FUNCTION\_CREATORS = ON  
 >    LOG\_BIN\_TRUST\_FUNCTION\_CREATORS系统变量控制二进制日志是否信任存储函数的创建者，因为存储函数的创建者是不确定的并可能导致不安全事件。设置LOG\_BIN\_TRUST\_FUNCTION\_CREATORS = ON（启用）放宽对非确定性函数的限制。  
->若选择RDS MySQL作为日志存储位置时，用户需首先在RDS控制台配置参数组，设置local\_infile=ON，再配置日志存储位置。  
+>若选择RDS MySQL作为日志存储位置时，用户需首先在RDS控制台配置参数组，设置LOCAL\_INFILE = ON，再配置日志存储位置。  
 
 ## 操作步骤<a name="zh-cn_topic_0110574955_s292a88d26b344586b36f47f4a443966d"></a>
 

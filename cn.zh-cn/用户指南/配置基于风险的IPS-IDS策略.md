@@ -2,6 +2,8 @@
 
 用户可基于数据库实际风险，选择应用入侵防御系统（IPS）或入侵检测系统（IDS），并配置对应策略规则，确保用户数据库安全。
 
+## 背景信息<a name="zh-cn_topic_0110574903_section59780192033"></a>
+
 基于风险的IPS/IDS规则支持SQL注入检测和风险概况的组合使用。
 
 要创建基于风险的IPS/IDS规则，用户可以先创建风险概况（请参见[配置风险概况](配置风险概况.md#ZH-CN_TOPIC_0111166352)），也可以根据需求来配置风险引擎的各项风险因素评分（请参见[配置风险引擎](配置风险引擎.md#ZH-CN_TOPIC_0111166556)）。
@@ -42,7 +44,7 @@
     <td class="cellrowborder" valign="top" width="69.92%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0110574903_ab34e3f03a66447138d85e3691e0d3c4c"><a name="zh-cn_topic_0110574903_ab34e3f03a66447138d85e3691e0d3c4c"></a><a name="zh-cn_topic_0110574903_ab34e3f03a66447138d85e3691e0d3c4c"></a>应用该规则的源IP地址，用户可以单击<span class="uicontrol" id="zh-cn_topic_0110574903_u078b79bb45ae4c6ba363f63e2a326fd4"><a name="zh-cn_topic_0110574903_u078b79bb45ae4c6ba363f63e2a326fd4"></a><a name="zh-cn_topic_0110574903_u078b79bb45ae4c6ba363f63e2a326fd4"></a>“新建”</span>来创建新的源IP地址。</p>
     </td>
     </tr>
-    <tr id="zh-cn_topic_0110574903_r5dd575b6956644a0bf479d96380e6d6a"><td class="cellrowborder" valign="top" width="30.080000000000002%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"><a name="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"></a><a name="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"></a>数据库用户</p>
+    <tr id="zh-cn_topic_0110574903_r5dd575b6956644a0bf479d96380e6d6a"><td class="cellrowborder" valign="top" width="30.080000000000002%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"><a name="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"></a><a name="zh-cn_topic_0110574903_zh-cn_topic_0076429812_p425410529501"></a>数据库用户名</p>
     </td>
     <td class="cellrowborder" valign="top" width="69.92%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0110574903_a76d693ec7bf84f4cbea72b9b0b41e36b"><a name="zh-cn_topic_0110574903_a76d693ec7bf84f4cbea72b9b0b41e36b"></a><a name="zh-cn_topic_0110574903_a76d693ec7bf84f4cbea72b9b0b41e36b"></a>应用该规则的数据库用户，用户可以单击<span class="uicontrol" id="zh-cn_topic_0110574903_u9b7785a2c1c446e7940f866f7fa59467"><a name="zh-cn_topic_0110574903_u9b7785a2c1c446e7940f866f7fa59467"></a><a name="zh-cn_topic_0110574903_u9b7785a2c1c446e7940f866f7fa59467"></a>“新建”</span>来创建新的数据库用户对象。</p>
     </td>

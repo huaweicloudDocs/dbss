@@ -2,11 +2,9 @@
 
 SMTP服务器用于发送告警邮件。要发送告警，必须配置SMTP服务器。
 
-## 操作场景<a name="zh-cn_topic_0110575020_s07b3bbf1039e4397a526d981de52a312"></a>
+## 背景信息<a name="zh-cn_topic_0110575020_s07b3bbf1039e4397a526d981de52a312"></a>
 
-该任务指导用户配置SMTP服务器。
-
-用户可以创建多个SMTP服务器，并配置主备SMTP服务器，以在主SMTP服务器无法访问时，自动切换到备SMTP服务器来发送告警邮件。配置主备SMTP服务器，请参见[设置系统配置](设置系统配置.md#ZH-CN_TOPIC_0111166461)。
+用户可以创建多个SMTP服务器，并配置主备SMTP服务器，当主SMTP服务器无法访问时，系统会自动切换到备SMTP服务器来发送告警邮件。配置主备SMTP服务器，请参见[设置系统配置](设置系统配置.md#ZH-CN_TOPIC_0111166461)。
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >配置SMTP服务器时，默认采用SSL连接。  
@@ -69,6 +67,11 @@ SMTP服务器用于发送告警邮件。要发送告警，必须配置SMTP服务
     <tr id="zh-cn_topic_0110575020_r063566c46e04437f9513ff7daf3f5dd4"><td class="cellrowborder" valign="top" width="29.7%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0110575020_a4a80abd9e7cd4cca9b7b53d927a67d70"><a name="zh-cn_topic_0110575020_a4a80abd9e7cd4cca9b7b53d927a67d70"></a><a name="zh-cn_topic_0110575020_a4a80abd9e7cd4cca9b7b53d927a67d70"></a>发出名</p>
     </td>
     <td class="cellrowborder" valign="top" width="70.3%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0110575020_a8cc0bf10dd2a4094a544b9e0eabf2a98"><a name="zh-cn_topic_0110575020_a8cc0bf10dd2a4094a544b9e0eabf2a98"></a><a name="zh-cn_topic_0110575020_a8cc0bf10dd2a4094a544b9e0eabf2a98"></a>告警发送者的名称。</p>
+    </td>
+    </tr>
+    <tr id="zh-cn_topic_0110575020_row954791505110"><td class="cellrowborder" valign="top" width="29.7%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0110575020_p16547141515113"><a name="zh-cn_topic_0110575020_p16547141515113"></a><a name="zh-cn_topic_0110575020_p16547141515113"></a>收件人邮箱地址</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="70.3%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0110575020_p654771519516"><a name="zh-cn_topic_0110575020_p654771519516"></a><a name="zh-cn_topic_0110575020_p654771519516"></a>接收告警的电子邮箱。</p>
     </td>
     </tr>
     </tbody>
