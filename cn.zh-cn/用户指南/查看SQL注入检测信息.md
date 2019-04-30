@@ -28,7 +28,7 @@
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   选择SQL注入检测的风险级别，列表将显示该级别的SQL注入检测信息。  
-    >-   输入SQL注入检测的关键字，单击![](figures/搜索-17.png)或按“Enter“，可以搜索指定的SQL注入检测信息。  
+    >-   输入SQL注入检测的关键字，单击![](figures/搜索-15.png)或按“Enter“，可以搜索指定的SQL注入检测信息。  
 
     **表 1**  SQL注入检测信息参数说明
 
