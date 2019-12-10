@@ -10,7 +10,7 @@ HexaTier的配置流程如[图1](#fig18350802165225)所示，流程说明如[表
 **表 1**  HexaTier配置流程说明
 
 <a name="table443217583618"></a>
-<table><thead align="left"><tr id="row143210517368"><th class="cellrowborder" valign="top" width="6.360636063606361%" id="mcps1.2.4.1.1"><p id="p243211514369"><a name="p243211514369"></a><a name="p243211514369"></a>序号</p>
+<table><thead align="left"><tr id="row143210517368"><th class="cellrowborder" valign="top" width="6.360636063606361%" id="mcps1.2.4.1.1"><p id="p243211514369"><a name="p243211514369"></a><a name="p243211514369"></a>步骤</p>
 </th>
 <th class="cellrowborder" valign="top" width="26.162616261626166%" id="mcps1.2.4.1.2"><p id="p10432145183617"><a name="p10432145183617"></a><a name="p10432145183617"></a>配置操作</p>
 </th>
