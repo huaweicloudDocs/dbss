@@ -22,15 +22,4 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
     **图 2**  下载Agent<a name="fig1470611221310"></a>  
     ![](figures/下载Agent.png "下载Agent")
 
-    请根据安装Agent节点的操作系统类型，选择下载相应的Agent安装包。
-
-    -   Linux操作系统
-
-        在“操作系统“为“LINUX64“的数据库中下载Agent安装包
-
-    -   Windows操作系统
-
-        在“操作系统“为“WINDOWS64“的数据库中下载Agent安装包
-
-
 

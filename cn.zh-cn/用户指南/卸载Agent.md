@@ -42,12 +42,3 @@
     ```
 
 
-## 在Windows操作系统上卸载Agent<a name="section11227183015414"></a>
-
-1.  进入Agent安装文件的目录。
-2.  双击“uninstall.bat“执行文件，卸载Agent。
-3.  验证Agent已卸载成功。
-    1.  打开任务管理器，查看“dbss\_audit\_agent“进程已停止。
-    2.  查看Agent安装目录，安装目录内容已经全部删除。
-
-

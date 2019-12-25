@@ -118,7 +118,6 @@
     <tr id="row16974182564811"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p1960715385016"><a name="p1960715385016"></a><a name="p1960715385016"></a>操作系统</p>
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p1660715375015"><a name="p1660715375015"></a><a name="p1660715375015"></a>可选参数。<span class="parmname" id="parmname16071553155013"><a name="parmname16071553155013"></a><a name="parmname16071553155013"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue360725318509"><a name="parmvalue360725318509"></a><a name="parmvalue360725318509"></a>“应用端”</span>时，可以配置该参数。</p>
-    <p id="p10607135395014"><a name="p10607135395014"></a><a name="p10607135395014"></a>指待审计的应用端节点的操作系统，可以选择<span class="parmvalue" id="parmvalue4608115316504"><a name="parmvalue4608115316504"></a><a name="parmvalue4608115316504"></a>“LINUX64”</span>或<span class="parmvalue" id="parmvalue860885305020"><a name="parmvalue860885305020"></a><a name="parmvalue860885305020"></a>“WINDOWS64”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p156088533508"><a name="p156088533508"></a><a name="p156088533508"></a>LINUX64</p>
     </td>
@@ -246,7 +245,6 @@
     <tr id="row19648105334818"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p7649135319487"><a name="p7649135319487"></a><a name="p7649135319487"></a>操作系统</p>
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p16501353154818"><a name="p16501353154818"></a><a name="p16501353154818"></a>可选参数。<span class="parmname" id="parmname12206171714917"><a name="parmname12206171714917"></a><a name="parmname12206171714917"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue820641713497"><a name="parmvalue820641713497"></a><a name="parmvalue820641713497"></a>“应用端”</span>时，可以配置该参数。</p>
-    <p id="p1651413195494"><a name="p1651413195494"></a><a name="p1651413195494"></a>指待审计的应用端节点的操作系统，可以选择<span class="parmvalue" id="parmvalue61112313505"><a name="parmvalue61112313505"></a><a name="parmvalue61112313505"></a>“LINUX64”</span>或<span class="parmvalue" id="parmvalue044843717504"><a name="parmvalue044843717504"></a><a name="parmvalue044843717504"></a>“WINDOWS64”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1665018536487"><a name="p1665018536487"></a><a name="p1665018536487"></a>LINUX64</p>
     </td>
