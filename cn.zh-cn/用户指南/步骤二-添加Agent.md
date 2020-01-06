@@ -1,6 +1,6 @@
 # 步骤二：添加Agent<a name="ZH-CN_TOPIC_0144723368"></a>
 
-添加的数据库开启审计功能后，您还需要为添加的数据库选择添加Agent的方式。数据库安全审计支持对华为云上的ECS/BMS的自建数据库和RDS关系型数据库进行审计，请根据您在华为云上实际部署的数据库选择Agent添加方式。
+添加的数据库开启审计功能后，您还需要为添加的数据库选择添加Agent的方式。数据库安全审计支持对华为云上的ECS/BMS自建数据库和RDS关系型数据库进行审计，请根据您在华为云上实际部署的数据库选择Agent添加方式。
 
 完成添加Agent后，您还需要根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
 
@@ -9,36 +9,41 @@
 -   已成功购买数据库安全审计实例，且实例的状态为“运行中“。
 -   已成功添加数据库并开启审计功能。
 
-## 添加Agent（ECS/BMS的自建数据库）<a name="section12371548164712"></a>
+## 常见场景<a name="section984415120154"></a>
+
+请您根据数据库类型以及数据库部署场景，为待审计的数据库添加Agent。数据库常见的部署场景说明如下：
+
+-   ECS/BMS自建数据库的常见部署场景如[图1](#zh-cn_topic_0174227115_fig0617131314411)和[图2](#zh-cn_topic_0174227115_fig1131385013914)所示。
+
+    **图 1**  一个应用端连接多个ECS/BMS自建数据库<a name="zh-cn_topic_0174227115_fig0617131314411"></a>  
+    ![](figures/一个应用端连接多个ECS-BMS自建数据库.png "一个应用端连接多个ECS-BMS自建数据库")
+
+    **图 2**  多个应用端连接同一个ECS/BMS自建数据库<a name="zh-cn_topic_0174227115_fig1131385013914"></a>  
+    ![](figures/多个应用端连接同一个ECS-BMS自建数据库.png "多个应用端连接同一个ECS-BMS自建数据库")
+
+-   RDS关系型数据库的常见部署场景如[图3](#zh-cn_topic_0174227115_fig76418538416)和[图4](#zh-cn_topic_0174227115_fig766123541110)所示。
+
+    **图 3**  一个应用端连接多个RDS<a name="zh-cn_topic_0174227115_fig76418538416"></a>  
+    ![](figures/一个应用端连接多个RDS.png "一个应用端连接多个RDS")
+
+    **图 4**  多个应用端连接同一个RDS<a name="zh-cn_topic_0174227115_fig766123541110"></a>  
+    ![](figures/多个应用端连接同一个RDS.png "多个应用端连接同一个RDS")
+
+
+## 添加Agent（ECS/BMS自建数据库）<a name="section12371548164712"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/)。
-2.  进入添加Agent入口，如[图1](#fig4155162273613)所示。
+2.  进入添加Agent入口，如[图5](#fig4155162273613)所示。
 
-    **图 1**  进入添加Agent入口<a name="fig4155162273613"></a>  
+    **图 5**  进入添加Agent入口<a name="fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
-3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图2](#fig746421985110)和[图3](#fig12967192134812)所示，相关参数说明如[表1](#table1996772134818)所示。
+3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图6](#fig12967192134812)所示，相关参数说明如[表1](#table1996772134818)所示。
 
-    -   “添加方式“选择“选择已有Agent“
+    **图 6**  在数据库端添加Agent<a name="fig12967192134812"></a>  
+    ![](figures/在数据库端添加Agent.png "在数据库端添加Agent")
 
-        在什么场景下需要选择“选择已有Agent“添加方式的详细介绍，请参见[在什么场景下需要选择“选择已有Agent”添加方式？](https://support.huaweicloud.com/dbss_faq/dbss_01_0286.html)。
-
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >选择“选择已有Agent“添加方式，如果您已在应用端安装了Agent，该数据库添加Agent后，数据库安全审计即可对该数据库进行审计。  
-
-        **图 2**  选择已有Agent<a name="fig746421985110"></a>  
-        ![](figures/选择已有Agent.png "选择已有Agent")
-
-    -   “添加方式“选择“创建Agent“
-
-        如果待添加Agent的数据库需要创建Agent，请创建新的Agent。
-
-        安装节点类型选择“数据库端“或“应用端“。
-
-        **图 3**  在数据库端添加Agent<a name="fig12967192134812"></a>  
-        ![](figures/在数据库端添加Agent.png "在数据库端添加Agent")
-
-    **表 1**  添加Agent参数说明（ECS/BMS的自建数据库）
+    **表 1**  添加Agent参数说明（ECS/BMS自建数据库）
 
     <a name="table1996772134818"></a>
     <table><thead align="left"><tr id="row17968122104812"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.1"><p id="p1096817212485"><a name="p1096817212485"></a><a name="p1096817212485"></a>参数名称</p>
@@ -77,47 +82,14 @@
     <tr id="row109705234815"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p597020211485"><a name="p597020211485"></a><a name="p597020211485"></a>安装节点类型</p>
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p99701725487"><a name="p99701725487"></a><a name="p99701725487"></a>当<span class="parmname" id="parmname297062194815"><a name="parmname297062194815"></a><a name="parmname297062194815"></a>“添加方式”</span>选择<span class="parmvalue" id="parmvalue6970223486"><a name="parmvalue6970223486"></a><a name="parmvalue6970223486"></a>“创建Agent”</span>时，需配置该参数。</p>
-    <p id="p397014213487"><a name="p397014213487"></a><a name="p397014213487"></a>审计ECS/BMS的自建数据库，可以选择<span class="parmvalue" id="parmvalue5340204231111"><a name="parmvalue5340204231111"></a><a name="parmvalue5340204231111"></a>“数据库端”</span>或<span class="parmvalue" id="parmvalue079182232218"><a name="parmvalue079182232218"></a><a name="parmvalue079182232218"></a>“应用端”</span>。</p>
+    <p id="p397014213487"><a name="p397014213487"></a><a name="p397014213487"></a>审计ECS/BMS自建数据库，选择<span class="parmvalue" id="parmvalue5340204231111"><a name="parmvalue5340204231111"></a><a name="parmvalue5340204231111"></a>“数据库端”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p7970192114813"><a name="p7970192114813"></a><a name="p7970192114813"></a>数据库端</p>
     </td>
     </tr>
-    <tr id="row113221657142414"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p5645318122520"><a name="p5645318122520"></a><a name="p5645318122520"></a>安装节点IP</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p56456181254"><a name="p56456181254"></a><a name="p56456181254"></a><span class="parmname" id="parmname126455181257"><a name="parmname126455181257"></a><a name="parmname126455181257"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue1564561814252"><a name="parmvalue1564561814252"></a><a name="parmvalue1564561814252"></a>“应用端”</span>时，需配置该参数。</p>
-    <p id="p63699302389"><a name="p63699302389"></a><a name="p63699302389"></a>IP地址支持IPv4（例如，192.168.1.1）和IPv6（例如，1050:0:0:0:5:600:300c:326b）格式。</p>
-    <p id="p5470193082518"><a name="p5470193082518"></a><a name="p5470193082518"></a>指待审计的应用端节点的IP地址。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1964541820257"><a name="p1964541820257"></a><a name="p1964541820257"></a>192.168.1.1</p>
-    </td>
-    </tr>
-    <tr id="row13261530668"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p139041734122410"><a name="p139041734122410"></a><a name="p139041734122410"></a>审计网卡名称</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p12904103412410"><a name="p12904103412410"></a><a name="p12904103412410"></a>可选参数。<span class="parmname" id="parmname590493482417"><a name="parmname590493482417"></a><a name="parmname590493482417"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue18904153412249"><a name="parmvalue18904153412249"></a><a name="parmvalue18904153412249"></a>“应用端”</span>时，可以配置该参数。</p>
-    <p id="p1190415347249"><a name="p1190415347249"></a><a name="p1190415347249"></a>指待审计的应用端节点的网卡名称。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p39049348244"><a name="p39049348244"></a><a name="p39049348244"></a>-</p>
-    </td>
-    </tr>
-    <tr id="row1252472714611"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p49040343244"><a name="p49040343244"></a><a name="p49040343244"></a>CPU阈值(%)</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p1290433416242"><a name="p1290433416242"></a><a name="p1290433416242"></a>可选参数。<span class="parmname" id="parmname2905734102411"><a name="parmname2905734102411"></a><a name="parmname2905734102411"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue290543411243"><a name="parmvalue290543411243"></a><a name="parmvalue290543411243"></a>“应用端”</span>时，可以配置该参数。</p>
-    <p id="p49051934192416"><a name="p49051934192416"></a><a name="p49051934192416"></a>指待审计的应用端节点的CPU阈值，缺省值为<span class="parmvalue" id="parmvalue590518346243"><a name="parmvalue590518346243"></a><a name="parmvalue590518346243"></a>“80”</span>。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1290511349244"><a name="p1290511349244"></a><a name="p1290511349244"></a>80</p>
-    </td>
-    </tr>
-    <tr id="row58982331567"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p1190513411244"><a name="p1190513411244"></a><a name="p1190513411244"></a>内存阈值(%)</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p19905734182415"><a name="p19905734182415"></a><a name="p19905734182415"></a>可选参数。<span class="parmname" id="parmname1190503492416"><a name="parmname1190503492416"></a><a name="parmname1190503492416"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue1990514349244"><a name="parmvalue1990514349244"></a><a name="parmvalue1990514349244"></a>“应用端”</span>时，可以配置该参数。</p>
-    <p id="p1090513472410"><a name="p1090513472410"></a><a name="p1090513472410"></a>指待审计的应用端节点的内存阈值，缺省值为<span class="parmvalue" id="parmvalue5905143414242"><a name="parmvalue5905143414242"></a><a name="parmvalue5905143414242"></a>“80”</span>。</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p7905034182415"><a name="p7905034182415"></a><a name="p7905034182415"></a>80</p>
-    </td>
-    </tr>
     <tr id="row16974182564811"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p1960715385016"><a name="p1960715385016"></a><a name="p1960715385016"></a>操作系统</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p1660715375015"><a name="p1660715375015"></a><a name="p1660715375015"></a>可选参数。<span class="parmname" id="parmname16071553155013"><a name="parmname16071553155013"></a><a name="parmname16071553155013"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue360725318509"><a name="parmvalue360725318509"></a><a name="parmvalue360725318509"></a>“应用端”</span>时，可以配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p1660715375015"><a name="p1660715375015"></a><a name="p1660715375015"></a>指待审计的数据库的操作系统。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p156088533508"><a name="p156088533508"></a><a name="p156088533508"></a>LINUX64</p>
     </td>
@@ -126,9 +98,9 @@
     </table>
 
 4.  单击“确定“，Agent添加成功。
-5.  单击数据库左侧的![](figures/icon-drop.png)展开该数据库的详细信息，查看添加的Agent信息，如[图4](#fig18975172124811)所示。
+5.  单击数据库左侧的![](figures/icon-drop.png)展开该数据库的详细信息，查看添加的Agent信息，如[图7](#fig18975172124811)所示。
 
-    **图 4**  Agent添加完成<a name="fig18975172124811"></a>  
+    **图 7**  Agent添加完成<a name="fig18975172124811"></a>  
     ![](figures/Agent添加完成.png "Agent添加完成")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
@@ -137,13 +109,18 @@
 
 ## 添加Agent（RDS关系型数据库）<a name="section1568164924617"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
-2.  进入添加Agent入口，如[图5](#zh-cn_topic_0144723368_fig4155162273613)所示。
+当某个应用端连接了多个RDS时， 请按以下方式添加Agent：
 
-    **图 5**  进入添加Agent入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  
+-   连接该应用端所有的RDS都需要添加Agent。
+-   如果连接该应用端的某个数据库已在应用端添加了Agent。其他数据库在添加Agent时，请选择“选择已有Agent“添加方式。
+
+1.  [登录管理控制台](https://console.huaweicloud.com/)。
+2.  进入添加Agent入口，如[图8](#zh-cn_topic_0144723368_fig4155162273613)所示。
+
+    **图 8**  进入添加Agent入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
-3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图2](#fig746421985110)和[图7](#fig2692155012314)所示，相关参数说明如[表2](#table146922503232)所示。
+3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#zh-cn_topic_0144723368_fig746421985110)和[图10](#fig2692155012314)所示，相关参数说明如[表2](#table146922503232)所示。
 
     -   “添加方式“选择“选择已有Agent“
 
@@ -152,7 +129,7 @@
         >![](public_sys-resources/icon-note.gif) **说明：**   
         >选择“选择已有Agent“添加方式，如果您已在应用端安装了Agent，该数据库添加Agent后，数据库安全审计即可对该数据库进行审计。  
 
-        **图 6**  选择已有Agent<a name="zh-cn_topic_0144723368_fig746421985110"></a>  
+        **图 9**  选择已有Agent<a name="zh-cn_topic_0144723368_fig746421985110"></a>  
         ![](figures/选择已有Agent.png "选择已有Agent")
 
     -   “添加方式“选择“创建Agent“
@@ -161,7 +138,7 @@
 
         安装节点类型选择“应用端“。
 
-        **图 7**  在应用端添加Agent<a name="fig2692155012314"></a>  
+        **图 10**  在应用端添加Agent<a name="fig2692155012314"></a>  
         ![](figures/在应用端添加Agent.png "在应用端添加Agent")
 
     **表 2**  添加Agent参数说明（RDS关系型数据库）
@@ -178,7 +155,7 @@
     <tbody><tr id="row769315010235"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p6693145015238"><a name="p6693145015238"></a><a name="p6693145015238"></a>添加方式</p>
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><div class="p" id="p5693155082313"><a name="p5693155082313"></a><a name="p5693155082313"></a>您可以选择Agent的添加方式。<a name="zh-cn_topic_0144723368_ul169686224815"></a><a name="zh-cn_topic_0144723368_ul169686224815"></a><ul id="zh-cn_topic_0144723368_ul169686224815"><li>选择已有Agent<p id="zh-cn_topic_0144723368_p29682021486"><a name="zh-cn_topic_0144723368_p29682021486"></a><a name="zh-cn_topic_0144723368_p29682021486"></a>当某个应用端连接了多个数据库时，如果该应用端的一个数据库已经在应用端添加了Agent。其他数据库在添加Agent时，只需要选择<span class="parmvalue" id="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a>“选择已有Agent”</span>添加方式。</p>
-    </li><li>创建Agent<p id="zh-cn_topic_0144723368_p89687234813"><a name="zh-cn_topic_0144723368_p89687234813"></a><a name="zh-cn_topic_0144723368_p89687234813"></a>如果待添加Agent的数据库需要创建Agent，请创建新的Agent。</p>
+    </li><li>创建Agent<p id="p510888134217"><a name="p510888134217"></a><a name="p510888134217"></a>如果待添加Agent的数据库需要创建Agent，请创建新的Agent。</p>
     </li></ul>
     </div>
     </td>
@@ -253,9 +230,9 @@
     </table>
 
 4.  单击“确定“，Agent添加成功。
-5.  单击数据库左侧的![](figures/icon-drop.png)展开该数据库的详细信息，查看添加的Agent信息，如[图8](#fig1470611221310)所示。
+5.  单击数据库左侧的![](figures/icon-drop.png)展开该数据库的详细信息，查看添加的Agent信息，如[图11](#fig1470611221310)所示。
 
-    **图 8**  Agent已添加完成<a name="fig1470611221310"></a>  
+    **图 11**  Agent已添加完成<a name="fig1470611221310"></a>  
     ![](figures/Agent已添加完成.png "Agent已添加完成")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
