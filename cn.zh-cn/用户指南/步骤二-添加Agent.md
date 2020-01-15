@@ -30,6 +30,52 @@
     ![](figures/多个应用端连接同一个RDS.png "多个应用端连接同一个RDS")
 
 
+添加Agent方式的详细说明如[表1](#table218115952118)所示。
+
+**表 1**  添加Agent方式说明
+
+<a name="table218115952118"></a>
+<table><thead align="left"><tr id="row1528919594215"><th class="cellrowborder" valign="top" width="16.328367163283673%" id="mcps1.2.5.1.1"><p id="p1128935917212"><a name="p1128935917212"></a><a name="p1128935917212"></a>使用场景</p>
+</th>
+<th class="cellrowborder" valign="top" width="15.308469153084694%" id="mcps1.2.5.1.2"><p id="p828913593219"><a name="p828913593219"></a><a name="p828913593219"></a>Agent安装节点</p>
+</th>
+<th class="cellrowborder" valign="top" width="29.587041295870414%" id="mcps1.2.5.1.3"><p id="p62896599219"><a name="p62896599219"></a><a name="p62896599219"></a>审计功能说明</p>
+</th>
+<th class="cellrowborder" valign="top" width="38.77612238776123%" id="mcps1.2.5.1.4"><p id="p9290205952117"><a name="p9290205952117"></a><a name="p9290205952117"></a>注意事项</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1329085922110"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p20290175916215"><a name="p20290175916215"></a><a name="p20290175916215"></a>ECS/BMS自建数据库</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.2 "><p id="p1629095932111"><a name="p1629095932111"></a><a name="p1629095932111"></a>数据库端</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p1529018598214"><a name="p1529018598214"></a><a name="p1529018598214"></a>可以审计所有访问该数据库的应用端的所有访问记录。</p>
+</td>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1629035972114"></a><a name="ul1629035972114"></a><ul id="ul1629035972114"><li>在数据库端添加Agent。</li><li>当某个应用端连接多个ECS/BMS自建数据库时，所有连接该应用端的数据库都需要添加Agent。</li></ul>
+</td>
+</tr>
+<tr id="row429015919219"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p1029055912111"><a name="p1029055912111"></a><a name="p1029055912111"></a>RDS关系型数据库</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.2 "><p id="p3290145932120"><a name="p3290145932120"></a><a name="p3290145932120"></a>应用端</p>
+<p id="p104455011232"><a name="p104455011232"></a><a name="p104455011232"></a>（应用端部署在云上）</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p429035913213"><a name="p429035913213"></a><a name="p429035913213"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
+</td>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择“应用端”添加方式后，其他数据库选择“选择已有Agent”添加方式。</li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
+</td>
+</tr>
+<tr id="row01451041229"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p91462482214"><a name="p91462482214"></a><a name="p91462482214"></a>RDS关系型数据库</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.308469153084694%" headers="mcps1.2.5.1.2 "><p id="p57321338145019"><a name="p57321338145019"></a><a name="p57321338145019"></a>代理端（应用端部署在云下）</p>
+</td>
+<td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p07324384506"><a name="p07324384506"></a><a name="p07324384506"></a>只能审计代理端与后端数据库之间的访问记录，无法审计应用端与后端数据库的访问记录。</p>
+</td>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul2118820252"></a><a name="ul2118820252"></a><ul id="ul2118820252"><li>在应用端添加Agent。</li><li><span class="parmname" id="parmname12632205416245"><a name="parmname12632205416245"></a><a name="parmname12632205416245"></a>“安装节点IP”</span>需要配置为代理端的IP地址。</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 添加Agent（ECS/BMS自建数据库）<a name="section12371548164712"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/)。
@@ -38,12 +84,12 @@
     **图 5**  进入添加Agent入口<a name="fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
-3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图6](#fig12967192134812)所示，相关参数说明如[表1](#table1996772134818)所示。
+3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图6](#fig12967192134812)所示，相关参数说明如[表2](#table1996772134818)所示。
 
     **图 6**  在数据库端添加Agent<a name="fig12967192134812"></a>  
     ![](figures/在数据库端添加Agent.png "在数据库端添加Agent")
 
-    **表 1**  添加Agent参数说明（ECS/BMS自建数据库）
+    **表 2**  添加Agent参数说明（ECS/BMS自建数据库）
 
     <a name="table1996772134818"></a>
     <table><thead align="left"><tr id="row17968122104812"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.1"><p id="p1096817212485"><a name="p1096817212485"></a><a name="p1096817212485"></a>参数名称</p>
@@ -120,7 +166,7 @@
     **图 8**  进入添加Agent入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
-3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#zh-cn_topic_0144723368_fig746421985110)和[图10](#fig2692155012314)所示，相关参数说明如[表2](#table146922503232)所示。
+3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#zh-cn_topic_0144723368_fig746421985110)和[图10](#fig2692155012314)所示，相关参数说明如[表3](#table146922503232)所示。
 
     -   “添加方式“选择“选择已有Agent“
 
@@ -141,7 +187,7 @@
         **图 10**  在应用端添加Agent<a name="fig2692155012314"></a>  
         ![](figures/在应用端添加Agent.png "在应用端添加Agent")
 
-    **表 2**  添加Agent参数说明（RDS关系型数据库）
+    **表 3**  添加Agent参数说明（RDS关系型数据库）
 
     <a name="table146922503232"></a>
     <table><thead align="left"><tr id="row369365019232"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.1"><p id="p1869325015239"><a name="p1869325015239"></a><a name="p1869325015239"></a>参数名称</p>
@@ -189,7 +235,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p104441546163913"><a name="p104441546163913"></a><a name="p104441546163913"></a><span class="parmname" id="parmname87841450973"><a name="parmname87841450973"></a><a name="parmname87841450973"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue127471541081"><a name="parmvalue127471541081"></a><a name="parmvalue127471541081"></a>“应用端”</span>时，需配置该参数。</p>
     <p id="p5231578394"><a name="p5231578394"></a><a name="p5231578394"></a>IP地址支持IPv4（例如，192.168.1.1）和IPv6（例如，1050:0:0:0:5:600:300c:326b）格式。</p>
-    <div class="notice" id="note1848771716436"><a name="note1848771716436"></a><a name="note1848771716436"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p19161433104312"><a name="p19161433104312"></a><a name="p19161433104312"></a>当审计RDS关系型数据库且应用端在云下时，代理端将作为应用端，此时，<span class="parmname" id="parmname1560465312211"><a name="parmname1560465312211"></a><a name="parmname1560465312211"></a>“安装节点IP”</span>需要配置为代理的IP地址。</p>
+    <div class="notice" id="note1848771716436"><a name="note1848771716436"></a><a name="note1848771716436"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p19161433104312"><a name="p19161433104312"></a><a name="p19161433104312"></a>当审计RDS关系型数据库且应用端在云下时，代理端将作为应用端，此时，<span class="parmname" id="parmname1560465312211"><a name="parmname1560465312211"></a><a name="parmname1560465312211"></a>“安装节点IP”</span>需要配置为代理端的IP地址。</p>
     </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1569452710374"><a name="p1569452710374"></a><a name="p1569452710374"></a>192.168.1.1</p>
@@ -241,5 +287,5 @@
 
 ## 后续处理<a name="section11581123681920"></a>
 
-Agent添加完成后，您还需要根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，数据库安全审计才能对添加的数据库进行审计。有关安装Agent的详细操作，请参见[安装Agent](Linux操作系统.md)。
+Agent添加完成后，您还需要根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，数据库安全审计才能对添加的数据库进行审计。有关安装Agent的详细操作，请参见[安装Agent](安装Agent（Linux操作系统）.md)。
 
