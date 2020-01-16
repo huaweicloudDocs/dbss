@@ -54,10 +54,9 @@
     -   [快速使用流程](快速使用流程.md)
     -   [步骤一：添加数据库并开启审计](步骤一-添加数据库并开启审计.md)
     -   [步骤二：添加Agent](步骤二-添加Agent.md)
-    -   [步骤三：安装Agent]
+    -   [步骤三：下载并安装Agent]
         -   [下载Agent](下载Agent.md)
-        -   [Linux操作系统](Linux操作系统.md)
-        -   [Windows操作系统](Windows操作系统.md)
+        -   [安装Agent（Linux操作系统）](安装Agent（Linux操作系统）.md)
 
     -   [步骤四：查看审计结果]
         -   [查看审计总览信息](查看审计总览信息.md)
