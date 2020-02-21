@@ -57,6 +57,7 @@
     -   [步骤三：下载并安装Agent]
         -   [下载Agent](下载Agent.md)
         -   [安装Agent（Linux操作系统）](安装Agent（Linux操作系统）.md)
+        -   [安装Agent（Windows操作系统）](安装Agent（Windows操作系统）.md)
 
     -   [步骤四：查看审计结果]
         -   [查看审计总览信息](查看审计总览信息.md)

@@ -32,14 +32,17 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 安装Agent节点的详细说明如[表1](#zh-cn_topic_0110856029_table4295843716304)所示。
 
+>![](public_sys-resources/icon-caution.gif) **注意：**   
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Angent需在数据库端添加。  
+
 **表 1**  安装Agent场景说明
 
 <a name="zh-cn_topic_0110856029_table4295843716304"></a>
 <table><thead align="left"><tr id="zh-cn_topic_0110856029_row4338993216304"><th class="cellrowborder" valign="top" width="16.91%" id="mcps1.2.5.1.1"><p id="p242511529611"><a name="p242511529611"></a><a name="p242511529611"></a>使用场景</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.790000000000001%" id="mcps1.2.5.1.2"><p id="p669218115912"><a name="p669218115912"></a><a name="p669218115912"></a>Agent安装节点</p>
+<th class="cellrowborder" valign="top" width="15.61%" id="mcps1.2.5.1.2"><p id="p669218115912"><a name="p669218115912"></a><a name="p669218115912"></a>Agent安装节点</p>
 </th>
-<th class="cellrowborder" valign="top" width="29.03%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0110856029_p554697916304"><a name="zh-cn_topic_0110856029_p554697916304"></a><a name="zh-cn_topic_0110856029_p554697916304"></a>审计功能说明</p>
+<th class="cellrowborder" valign="top" width="29.21%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0110856029_p554697916304"><a name="zh-cn_topic_0110856029_p554697916304"></a><a name="zh-cn_topic_0110856029_p554697916304"></a>审计功能说明</p>
 </th>
 <th class="cellrowborder" valign="top" width="38.269999999999996%" id="mcps1.2.5.1.4"><p id="p1457555517420"><a name="p1457555517420"></a><a name="p1457555517420"></a>注意事项</p>
 </th>
@@ -47,27 +50,27 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 </thead>
 <tbody><tr id="zh-cn_topic_0110856029_row3896937416304"><td class="cellrowborder" valign="top" width="16.91%" headers="mcps1.2.5.1.1 "><p id="p1742645217615"><a name="p1742645217615"></a><a name="p1742645217615"></a>ECS/BMS自建数据库</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p96937116596"><a name="p96937116596"></a><a name="p96937116596"></a>数据库端</p>
+<td class="cellrowborder" valign="top" width="15.61%" headers="mcps1.2.5.1.2 "><p id="p96937116596"><a name="p96937116596"></a><a name="p96937116596"></a>数据库端</p>
 </td>
-<td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.5.1.3 "><p id="p163512146517"><a name="p163512146517"></a><a name="p163512146517"></a>可以审计所有访问该数据库的应用端的所有访问记录。</p>
+<td class="cellrowborder" valign="top" width="29.21%" headers="mcps1.2.5.1.3 "><p id="p163512146517"><a name="p163512146517"></a><a name="p163512146517"></a>可以审计所有访问该数据库的应用端的所有访问记录。</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.269999999999996%" headers="mcps1.2.5.1.4 "><a name="ul1434325082513"></a><a name="ul1434325082513"></a><ul id="ul1434325082513"><li>在数据库端安装Agent。</li><li>当某个应用端连接多个ECS/BMS自建数据库时，需要在所有连接该应用端的数据库端安装Agent。</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0110856029_row1319658616304"><td class="cellrowborder" valign="top" width="16.91%" headers="mcps1.2.5.1.1 "><p id="p10426195218611"><a name="p10426195218611"></a><a name="p10426195218611"></a>RDS关系型数据库</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p1669315145912"><a name="p1669315145912"></a><a name="p1669315145912"></a>应用端（应用端部署在云上）</p>
+<td class="cellrowborder" valign="top" width="15.61%" headers="mcps1.2.5.1.2 "><p id="p1669315145912"><a name="p1669315145912"></a><a name="p1669315145912"></a>应用端（应用端部署在云上）</p>
 </td>
-<td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.5.1.3 "><p id="p137861430175114"><a name="p137861430175114"></a><a name="p137861430175114"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
+<td class="cellrowborder" valign="top" width="29.21%" headers="mcps1.2.5.1.3 "><p id="p137861430175114"><a name="p137861430175114"></a><a name="p137861430175114"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.269999999999996%" headers="mcps1.2.5.1.4 "><a name="ul832714025916"></a><a name="ul832714025916"></a><ul id="ul832714025916"><li>在应用端安装Agent。</li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要安装Agent。</li></ul>
 </td>
 </tr>
 <tr id="row673153818506"><td class="cellrowborder" valign="top" width="16.91%" headers="mcps1.2.5.1.1 "><p id="p19307124313503"><a name="p19307124313503"></a><a name="p19307124313503"></a>RDS关系型数据库</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.790000000000001%" headers="mcps1.2.5.1.2 "><p id="p57321338145019"><a name="p57321338145019"></a><a name="p57321338145019"></a>代理端（应用端部署在云下）</p>
+<td class="cellrowborder" valign="top" width="15.61%" headers="mcps1.2.5.1.2 "><p id="p57321338145019"><a name="p57321338145019"></a><a name="p57321338145019"></a>代理端（应用端部署在云下）</p>
 </td>
-<td class="cellrowborder" valign="top" width="29.03%" headers="mcps1.2.5.1.3 "><p id="p07324384506"><a name="p07324384506"></a><a name="p07324384506"></a>只能审计代理端与后端数据库之间的访问记录，无法审计应用端与后端数据库的访问记录。</p>
+<td class="cellrowborder" valign="top" width="29.21%" headers="mcps1.2.5.1.3 "><p id="p07324384506"><a name="p07324384506"></a><a name="p07324384506"></a>只能审计代理端与后端数据库之间的访问记录，无法审计应用端与后端数据库的访问记录。</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.269999999999996%" headers="mcps1.2.5.1.4 "><p id="p31819567512"><a name="p31819567512"></a><a name="p31819567512"></a>在代理端安装Agent。</p>
 </td>
