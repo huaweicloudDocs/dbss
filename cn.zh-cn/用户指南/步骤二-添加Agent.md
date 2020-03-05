@@ -33,7 +33,7 @@
 添加Agent方式的详细说明如[表1](#table218115952118)所示。
 
 >![](public_sys-resources/icon-caution.gif) **注意：**   
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Angent需在数据库端添加。  
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
 
 **表 1**  添加Agent方式说明
 
@@ -64,7 +64,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p429035913213"><a name="p429035913213"></a><a name="p429035913213"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择“应用端”添加方式后，其他数据库选择“选择已有Agent”添加方式。</li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择<span class="parmname" id="parmname108671446165513"><a name="parmname108671446165513"></a><a name="parmname108671446165513"></a>“安装节点类型”</span>后，其他数据库选择“选择已有Agent”添加方式。</li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
 </td>
 </tr>
 <tr id="row01451041229"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p91462482214"><a name="p91462482214"></a><a name="p91462482214"></a>RDS关系型数据库</p>

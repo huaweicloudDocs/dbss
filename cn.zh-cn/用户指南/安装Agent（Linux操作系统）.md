@@ -33,7 +33,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 安装Agent节点的详细说明如[表1](#zh-cn_topic_0110856029_table4295843716304)所示。
 
 >![](public_sys-resources/icon-caution.gif) **注意：**   
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Angent需在数据库端添加。  
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
 
 **表 1**  安装Agent场景说明
 
