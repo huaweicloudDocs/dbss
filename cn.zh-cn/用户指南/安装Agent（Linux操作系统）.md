@@ -32,7 +32,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 安装Agent节点的详细说明如[表1](#zh-cn_topic_0110856029_table4295843716304)所示。
 
->![](public_sys-resources/icon-caution.gif) **注意：**   
+>![](public_sys-resources/icon-notice.gif) **须知：**   
 >当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
 
 **表 1**  安装Agent场景说明
@@ -152,7 +152,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
         ![](figures/查看SQL语句.png "查看SQL语句")
 
         -   如果SQL语句列表中显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信正常。
-        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[Agent与数据库安全审计实例之间通信异常](Agent与数据库安全审计实例之间通信异常.md)处理。
+        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](如何处理Agent与数据库安全审计实例之间通信异常.md)处理。
 
 
 

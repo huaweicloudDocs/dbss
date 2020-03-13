@@ -32,7 +32,7 @@
 
 添加Agent方式的详细说明如[表1](#table218115952118)所示。
 
->![](public_sys-resources/icon-caution.gif) **注意：**   
+>![](public_sys-resources/icon-notice.gif) **须知：**   
 >当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
 
 **表 1**  添加Agent方式说明

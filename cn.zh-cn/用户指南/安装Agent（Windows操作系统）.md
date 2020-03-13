@@ -32,7 +32,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 安装Agent节点的详细说明如[表1](#zh-cn_topic_0174227115_zh-cn_topic_0110856029_table4295843716304)所示。
 
->![](public_sys-resources/icon-caution.gif) **注意：**   
+>![](public_sys-resources/icon-notice.gif) **须知：**   
 >当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
 
 **表 1**  安装Agent场景说明
@@ -80,39 +80,41 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 ## 安装Agent<a name="section1410916716365"></a>
 
-1.  以“Administrator“用户登录到Windows主机。
-2.  将下载的Agent安装包“xxx.zip“复制到该主机任意一个目录下。
-3.  进入Agent安装包所在目录，并解压缩安装包。
-4.  进入解压后的文件夹，双击“install.bat“执行文件。
-    -   如果该Windows主机已安装“Npcap“，请执行[5](#li7837349132514)。
-    -   如果该Windows主机未安装“Npcap“，系统提示是否安装“Npcap“，请执行以下步骤：
-        1.  输入“y“，开始安装“Npcap“。
-        2.  在弹出的对话框中，单击“I Agree“，如[图5](#fig6281112407)所示。
+1.  在Windows主机安装“Npcap“软件。
+    -   如果该Windows主机已安装“Npcap“，请执行[2](#li536717914201)。
+    -   如果该Windows主机未安装“Npcap“，请执行以下步骤：
+        1.  请前往[https://nmap.org/npcap/](https://nmap.org/npcap/)下载Npcap最新软件安装包。
+        2.  将下载好的npcap-_xxxx_.exe软件安装包上传至需要安装agent的虚拟机。
+        3.  双击npcap软件安装包。
+        4.  在弹出的对话框中，单击“I Agree“，如[图5](#fig114541164118)所示。
 
-            **图 5**  同意安装“Npcap“<a name="fig6281112407"></a>  
+            **图 5**  同意安装“Npcap“<a name="fig114541164118"></a>  
             ![](figures/同意安装Npcap.png "同意安装Npcap")
 
-        3.  在弹出的对话框中，单击“Install“，如[图6](#fig113151344144114)所示。
+        5.  在弹出的对话框中，单击“Install“，如[图6](#fig124541516111114)所示。
 
-            **图 6**  安装“Npcap“<a name="fig113151344144114"></a>  
+            **图 6**  安装“Npcap“<a name="fig124541516111114"></a>  
             ![](figures/安装Npcap.png "安装Npcap")
 
-        4.  在弹出的对话框中，单击“Next“。
+        6.  在弹出的对话框中，单击“Next“。
 
             ![](figures/安装NPCAP-02.png)
 
-        5.  单击“Finish“，完成安装。
+        7.  单击“Finish“，完成安装。
 
             ![](figures/NPCAP安装完成.png)
 
-        6.  进入解压后的文件夹，双击“install.bat“执行文件后，执行[5](#li7837349132514)。
 
-5.  <a name="li7837349132514"></a>安装成功，界面如[图7](#fig1160640132710)所示，按任意键结束安装。
+2.  <a name="li536717914201"></a>以“Administrator“用户登录到Windows主机。
+3.  将下载的Agent安装包“xxx.zip“复制到该主机任意一个目录下。
+4.  进入Agent安装包所在目录，并解压缩安装包。
+5.  进入解压后的文件夹，双击“install.bat“执行文件。
+6.  安装成功，界面如[图7](#fig1160640132710)所示，按任意键结束安装。
 
     **图 7**  Agent安装成功<a name="fig1160640132710"></a>  
     ![](figures/Agent安装成功.png "Agent安装成功")
 
-6.  安装完成后，在Windows任务管理器中查看“dbss\_audit\_agent“进程。
+7.  安装完成后，在Windows任务管理器中查看“dbss\_audit\_agent“进程。
 
     如果进程不存在，说明Agent安装失败，请尝试重新安装Agent。
 
@@ -133,7 +135,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
         ![](figures/查看SQL语句.png "查看SQL语句")
 
         -   如果SQL语句列表中显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信正常。
-        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[Agent与数据库安全审计实例之间通信异常](Agent与数据库安全审计实例之间通信异常.md)处理。
+        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](如何处理Agent与数据库安全审计实例之间通信异常.md)处理。
 
 
 
