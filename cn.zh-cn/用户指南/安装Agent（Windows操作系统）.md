@@ -135,7 +135,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
         ![](figures/查看SQL语句.png "查看SQL语句")
 
         -   如果SQL语句列表中显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信正常。
-        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](如何处理Agent与数据库安全审计实例之间通信异常.md)处理。
+        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](https://support.huaweicloud.com/dbss_faq/dbss_01_0246.html)处理。
 
 
 
