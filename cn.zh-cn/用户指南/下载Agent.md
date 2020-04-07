@@ -11,7 +11,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 如果您需要在多个节点上安装Agent，您只需要将一个Agent安装包下载到本地后，就可以安装Agent。
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入数据库列表入口，如[图1](#zh-cn_topic_0144723368_fig4155162273613)所示。
 
     **图 1**  进入数据库列表入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  

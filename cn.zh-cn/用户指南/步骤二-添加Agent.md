@@ -81,7 +81,7 @@
 
 ## 添加Agent（ECS/BMS自建数据库）<a name="section12371548164712"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入添加Agent入口，如[图5](#fig4155162273613)所示。
 
     **图 5**  进入添加Agent入口<a name="fig4155162273613"></a>  
@@ -164,7 +164,7 @@
 -   连接该应用端所有的RDS都需要添加Agent。
 -   如果连接该应用端的某个数据库已在应用端添加了Agent。其他数据库在添加Agent时，请选择“选择已有Agent“添加方式。
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入添加Agent入口，如[图8](#zh-cn_topic_0144723368_fig4155162273613)所示。
 
     **图 8**  进入添加Agent入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  

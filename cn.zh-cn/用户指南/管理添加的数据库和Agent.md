@@ -10,7 +10,7 @@
 
 ## 查看数据库信息<a name="section1128063120241"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入数据库列表入口，如[图1](#zh-cn_topic_0208809337_zh-cn_topic_0144723368_fig4155162273613)所示。
 
     **图 1**  进入数据库列表入口<a name="zh-cn_topic_0208809337_zh-cn_topic_0144723368_fig4155162273613"></a>  
@@ -102,7 +102,7 @@
 
 ## 查看Agent信息<a name="section17294193018518"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入数据库列表入口，如[图3](#zh-cn_topic_0208809337_zh-cn_topic_0144723368_fig4155162273613_1)所示。
 
     **图 3**  进入数据库列表入口<a name="zh-cn_topic_0208809337_zh-cn_topic_0144723368_fig4155162273613_1"></a>  

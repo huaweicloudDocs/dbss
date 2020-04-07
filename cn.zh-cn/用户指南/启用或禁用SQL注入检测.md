@@ -15,7 +15,7 @@
 
 SQL注入检测默认开启，您可以根据使用需要禁用SQL注入检查规则。禁用SQL注入检测规则后，该审计规则在审计中将不生效。
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入SQL注入列表入口，如[图1](#fig61991836131419)所示。
 
     **图 1**  进入SQL注入列表入口<a name="fig61991836131419"></a>  

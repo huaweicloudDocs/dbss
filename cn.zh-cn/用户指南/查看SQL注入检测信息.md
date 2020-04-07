@@ -10,7 +10,7 @@
 
 ## 操作步骤<a name="section20994171263912"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入SQL注入列表入口，如[图1](#zh-cn_topic_0145074176_fig61991836131419)所示。
 
     **图 1**  进入SQL注入列表入口<a name="zh-cn_topic_0145074176_fig61991836131419"></a>  

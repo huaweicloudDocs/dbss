@@ -12,7 +12,7 @@
 
 ## 操作步骤<a name="section1070145145613"></a>
 
-1.  [登录管理控制台](https://console.huaweicloud.com/)。
+1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入重置密码入口，如[图1](#zh-cn_topic_0111166372_fig4989100164918)所示。
 
     **图 1**  进入重置密码入口<a name="zh-cn_topic_0111166372_fig4989100164918"></a>  
