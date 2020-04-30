@@ -1,4 +1,4 @@
-# 配置Syslog<a name="ZH-CN_TOPIC_0214266522"></a>
+# 配置Syslog<a name="dbss_01_0079"></a>
 
 用户可以通过系统设置，将信息发送到运行Syslog服务器的远程计算机。Syslog标准用于从网络设备捕获日志信息。
 

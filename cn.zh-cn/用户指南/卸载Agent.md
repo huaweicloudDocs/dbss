@@ -1,4 +1,4 @@
-# 卸载Agent<a name="ZH-CN_TOPIC_0146117470"></a>
+# 卸载Agent<a name="dbss_01_0199"></a>
 
 在数据库端或应用端的节点安装Agent后，当不需要停止审计数据库时，您可以在安装Agent的节点卸载Agent。
 

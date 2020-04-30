@@ -1,4 +1,4 @@
-# 安装Agent（Linux操作系统）<a name="ZH-CN_TOPIC_0174227115"></a>
+# 安装Agent（Linux操作系统）<a name="dbss_01_0254"></a>
 
 Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
 

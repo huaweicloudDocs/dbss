@@ -1,4 +1,4 @@
-# 步骤二：添加Agent<a name="ZH-CN_TOPIC_0144723368"></a>
+# 步骤二：添加Agent<a name="dbss_01_0188"></a>
 
 添加的数据库开启审计功能后，您还需要为添加的数据库选择添加Agent的方式。数据库安全审计支持对华为云上的ECS/BMS自建数据库和RDS关系型数据库进行审计，请根据您在华为云上实际部署的数据库选择Agent添加方式。
 
@@ -13,20 +13,20 @@
 
 请您根据数据库类型以及数据库部署场景，为待审计的数据库添加Agent。数据库常见的部署场景说明如下：
 
--   ECS/BMS自建数据库的常见部署场景如[图1](#zh-cn_topic_0174227115_fig0617131314411)和[图2](#zh-cn_topic_0174227115_fig1131385013914)所示。
+-   ECS/BMS自建数据库的常见部署场景如[图1](#dbss_01_0254_fig0617131314411)和[图2](#dbss_01_0254_fig1131385013914)所示。
 
-    **图 1**  一个应用端连接多个ECS/BMS自建数据库<a name="zh-cn_topic_0174227115_fig0617131314411"></a>  
+    **图 1**  一个应用端连接多个ECS/BMS自建数据库<a name="dbss_01_0254_fig0617131314411"></a>  
     ![](figures/一个应用端连接多个ECS-BMS自建数据库.png "一个应用端连接多个ECS-BMS自建数据库")
 
-    **图 2**  多个应用端连接同一个ECS/BMS自建数据库<a name="zh-cn_topic_0174227115_fig1131385013914"></a>  
+    **图 2**  多个应用端连接同一个ECS/BMS自建数据库<a name="dbss_01_0254_fig1131385013914"></a>  
     ![](figures/多个应用端连接同一个ECS-BMS自建数据库.png "多个应用端连接同一个ECS-BMS自建数据库")
 
--   RDS关系型数据库的常见部署场景如[图3](#zh-cn_topic_0174227115_fig76418538416)和[图4](#zh-cn_topic_0174227115_fig766123541110)所示。
+-   RDS关系型数据库的常见部署场景如[图3](#dbss_01_0254_fig76418538416)和[图4](#dbss_01_0254_fig766123541110)所示。
 
-    **图 3**  一个应用端连接多个RDS<a name="zh-cn_topic_0174227115_fig76418538416"></a>  
+    **图 3**  一个应用端连接多个RDS<a name="dbss_01_0254_fig76418538416"></a>  
     ![](figures/一个应用端连接多个RDS.png "一个应用端连接多个RDS")
 
-    **图 4**  多个应用端连接同一个RDS<a name="zh-cn_topic_0174227115_fig766123541110"></a>  
+    **图 4**  多个应用端连接同一个RDS<a name="dbss_01_0254_fig766123541110"></a>  
     ![](figures/多个应用端连接同一个RDS.png "多个应用端连接同一个RDS")
 
 
@@ -165,9 +165,9 @@
 -   如果连接该应用端的某个数据库已在应用端添加了Agent。其他数据库在添加Agent时，请选择“选择已有Agent“添加方式。
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入添加Agent入口，如[图8](#zh-cn_topic_0144723368_fig4155162273613)所示。
+2.  进入添加Agent入口，如[图8](#dbss_01_0188_fig4155162273613)所示。
 
-    **图 8**  进入添加Agent入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  
+    **图 8**  进入添加Agent入口<a name="dbss_01_0188_fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
 3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#zh-cn_topic_0144723368_fig746421985110)和[图10](#fig2692155012314)所示，相关参数说明如[表3](#table146922503232)所示。
@@ -186,7 +186,7 @@
 
         如果待添加Agent的数据库需要创建Agent，请创建新的Agent。
 
-        安装节点类型选择“应用端“。
+        “安装节点类型“选择“应用端“，“安装节点IP“输入应用端内网IP地址。
 
         **图 10**  在应用端添加Agent<a name="fig2692155012314"></a>  
         ![](figures/在应用端添加Agent.png "在应用端添加Agent")
@@ -194,17 +194,17 @@
     **表 3**  添加Agent参数说明（RDS关系型数据库）
 
     <a name="table146922503232"></a>
-    <table><thead align="left"><tr id="row369365019232"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.4.1.1"><p id="p1869325015239"><a name="p1869325015239"></a><a name="p1869325015239"></a>参数名称</p>
+    <table><thead align="left"><tr id="row369365019232"><th class="cellrowborder" valign="top" width="20.990000000000002%" id="mcps1.2.4.1.1"><p id="p1869325015239"><a name="p1869325015239"></a><a name="p1869325015239"></a>参数名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="61%" id="mcps1.2.4.1.2"><p id="p1069315072310"><a name="p1069315072310"></a><a name="p1069315072310"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="61.01%" id="mcps1.2.4.1.2"><p id="p1069315072310"><a name="p1069315072310"></a><a name="p1069315072310"></a>说明</p>
     </th>
     <th class="cellrowborder" valign="top" width="18%" id="mcps1.2.4.1.3"><p id="p136938501233"><a name="p136938501233"></a><a name="p136938501233"></a>取值样例</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row769315010235"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p6693145015238"><a name="p6693145015238"></a><a name="p6693145015238"></a>添加方式</p>
+    <tbody><tr id="row769315010235"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p6693145015238"><a name="p6693145015238"></a><a name="p6693145015238"></a>添加方式</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><div class="p" id="p5693155082313"><a name="p5693155082313"></a><a name="p5693155082313"></a>您可以选择Agent的添加方式。<a name="zh-cn_topic_0144723368_ul169686224815"></a><a name="zh-cn_topic_0144723368_ul169686224815"></a><ul id="zh-cn_topic_0144723368_ul169686224815"><li>选择已有Agent<p id="zh-cn_topic_0144723368_p29682021486"><a name="zh-cn_topic_0144723368_p29682021486"></a><a name="zh-cn_topic_0144723368_p29682021486"></a>当某个应用端连接了多个数据库时，如果该应用端的一个数据库已经在应用端添加了Agent。其他数据库在添加Agent时，只需要选择<span class="parmvalue" id="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a>“选择已有Agent”</span>添加方式。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><div class="p" id="p5693155082313"><a name="p5693155082313"></a><a name="p5693155082313"></a>您可以选择Agent的添加方式。<a name="zh-cn_topic_0144723368_ul169686224815"></a><a name="zh-cn_topic_0144723368_ul169686224815"></a><ul id="zh-cn_topic_0144723368_ul169686224815"><li>选择已有Agent<p id="zh-cn_topic_0144723368_p29682021486"><a name="zh-cn_topic_0144723368_p29682021486"></a><a name="zh-cn_topic_0144723368_p29682021486"></a>当某个应用端连接了多个数据库时，如果该应用端的一个数据库已经在应用端添加了Agent。其他数据库在添加Agent时，只需要选择<span class="parmvalue" id="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a>“选择已有Agent”</span>添加方式。</p>
     </li><li>创建Agent<p id="p510888134217"><a name="p510888134217"></a><a name="p510888134217"></a>如果待添加Agent的数据库需要创建Agent，请创建新的Agent。</p>
     </li></ul>
     </div>
@@ -212,32 +212,33 @@
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p5693155018234"><a name="p5693155018234"></a><a name="p5693155018234"></a>创建Agent</p>
     </td>
     </tr>
-    <tr id="row16693115019236"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p12693950112315"><a name="p12693950112315"></a><a name="p12693950112315"></a>数据库名称</p>
+    <tr id="row16693115019236"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p12693950112315"><a name="p12693950112315"></a><a name="p12693950112315"></a>数据库名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p1069313500233"><a name="p1069313500233"></a><a name="p1069313500233"></a>可选参数。当<span class="parmname" id="zh-cn_topic_0144723368_parmname1496911284813"><a name="zh-cn_topic_0144723368_parmname1496911284813"></a><a name="zh-cn_topic_0144723368_parmname1496911284813"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue1496992144815"><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a>“选择已有Agent”</span>时，可以选择实例下已添加Agent的数据库。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p1069313500233"><a name="p1069313500233"></a><a name="p1069313500233"></a>可选参数。当<span class="parmname" id="zh-cn_topic_0144723368_parmname1496911284813"><a name="zh-cn_topic_0144723368_parmname1496911284813"></a><a name="zh-cn_topic_0144723368_parmname1496911284813"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue1496992144815"><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a>“选择已有Agent”</span>时，可以选择实例下已添加Agent的数据库。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p4693750142315"><a name="p4693750142315"></a><a name="p4693750142315"></a>test1</p>
     </td>
     </tr>
-    <tr id="row6693115010235"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p0693145011230"><a name="p0693145011230"></a><a name="p0693145011230"></a>Agent ID</p>
+    <tr id="row6693115010235"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p0693145011230"><a name="p0693145011230"></a><a name="p0693145011230"></a>Agent ID</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p3693115010237"><a name="p3693115010237"></a><a name="p3693115010237"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname3969122104811"><a name="zh-cn_topic_0144723368_parmname3969122104811"></a><a name="zh-cn_topic_0144723368_parmname3969122104811"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue14969329489"><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a>“选择已有Agent”</span>时，需配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p3693115010237"><a name="p3693115010237"></a><a name="p3693115010237"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname3969122104811"><a name="zh-cn_topic_0144723368_parmname3969122104811"></a><a name="zh-cn_topic_0144723368_parmname3969122104811"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue14969329489"><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a>“选择已有Agent”</span>时，需配置该参数。</p>
     <p id="p1669475020234"><a name="p1669475020234"></a><a name="p1669475020234"></a>您可以选择实例下已添加的Agent ID，Agent ID由系统自动生成。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1869465018236"><a name="p1869465018236"></a><a name="p1869465018236"></a>-</p>
     </td>
     </tr>
-    <tr id="row12694175032314"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p76945501231"><a name="p76945501231"></a><a name="p76945501231"></a>安装节点类型</p>
+    <tr id="row12694175032314"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p76945501231"><a name="p76945501231"></a><a name="p76945501231"></a>安装节点类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p6694155012231"><a name="p6694155012231"></a><a name="p6694155012231"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname297062194815"><a name="zh-cn_topic_0144723368_parmname297062194815"></a><a name="zh-cn_topic_0144723368_parmname297062194815"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue6970223486"><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a>“创建Agent”</span>时，需配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p6694155012231"><a name="p6694155012231"></a><a name="p6694155012231"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname297062194815"><a name="zh-cn_topic_0144723368_parmname297062194815"></a><a name="zh-cn_topic_0144723368_parmname297062194815"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue6970223486"><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a>“创建Agent”</span>时，需配置该参数。</p>
     <p id="p769418506231"><a name="p769418506231"></a><a name="p769418506231"></a>审计RDS关系型数据库，需要选择<span class="parmvalue" id="parmvalue1769495019232"><a name="parmvalue1769495019232"></a><a name="parmvalue1769495019232"></a>“应用端”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p18694135052320"><a name="p18694135052320"></a><a name="p18694135052320"></a>应用端</p>
     </td>
     </tr>
-    <tr id="row14693142715371"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p1869422718373"><a name="p1869422718373"></a><a name="p1869422718373"></a>安装节点IP</p>
+    <tr id="row14693142715371"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p1869422718373"><a name="p1869422718373"></a><a name="p1869422718373"></a>安装节点IP</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p104441546163913"><a name="p104441546163913"></a><a name="p104441546163913"></a><span class="parmname" id="parmname87841450973"><a name="parmname87841450973"></a><a name="parmname87841450973"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue127471541081"><a name="parmvalue127471541081"></a><a name="parmvalue127471541081"></a>“应用端”</span>时，需配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p104441546163913"><a name="p104441546163913"></a><a name="p104441546163913"></a><span class="parmname" id="parmname87841450973"><a name="parmname87841450973"></a><a name="parmname87841450973"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue127471541081"><a name="parmvalue127471541081"></a><a name="parmvalue127471541081"></a>“应用端”</span>时，需配置该参数。</p>
+    <p id="p18043411752"><a name="p18043411752"></a><a name="p18043411752"></a>IP地址为应用端内网IP地址。</p>
     <p id="p5231578394"><a name="p5231578394"></a><a name="p5231578394"></a>IP地址支持IPv4（例如，192.168.1.1）和IPv6（例如，1050:0:0:0:5:600:300c:326b）格式。</p>
     <div class="notice" id="note1848771716436"><a name="note1848771716436"></a><a name="note1848771716436"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p19161433104312"><a name="p19161433104312"></a><a name="p19161433104312"></a>当审计RDS关系型数据库且应用端在云下时，代理端将作为应用端，此时，<span class="parmname" id="parmname1560465312211"><a name="parmname1560465312211"></a><a name="parmname1560465312211"></a>“安装节点IP”</span>需要配置为代理端的IP地址。</p>
     </div></div>
@@ -245,33 +246,33 @@
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1569452710374"><a name="p1569452710374"></a><a name="p1569452710374"></a>192.168.1.1</p>
     </td>
     </tr>
-    <tr id="row06233118374"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p362131103717"><a name="p362131103717"></a><a name="p362131103717"></a>审计网卡名称</p>
+    <tr id="row06233118374"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p362131103717"><a name="p362131103717"></a><a name="p362131103717"></a>审计网卡名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p2788134164016"><a name="p2788134164016"></a><a name="p2788134164016"></a>可选参数。<span class="parmname" id="parmname1896692617818"><a name="parmname1896692617818"></a><a name="parmname1896692617818"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue149661626385"><a name="parmvalue149661626385"></a><a name="parmvalue149661626385"></a>“应用端”</span>时，可以配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p2788134164016"><a name="p2788134164016"></a><a name="p2788134164016"></a>可选参数。<span class="parmname" id="parmname1896692617818"><a name="parmname1896692617818"></a><a name="parmname1896692617818"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue149661626385"><a name="parmvalue149661626385"></a><a name="parmvalue149661626385"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p478844114409"><a name="p478844114409"></a><a name="p478844114409"></a>指待审计的应用端节点的网卡名称。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1862183113717"><a name="p1862183113717"></a><a name="p1862183113717"></a>-</p>
     </td>
     </tr>
-    <tr id="row246482404017"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p1646411249407"><a name="p1646411249407"></a><a name="p1646411249407"></a>CPU阈值(%)</p>
+    <tr id="row246482404017"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p1646411249407"><a name="p1646411249407"></a><a name="p1646411249407"></a>CPU阈值(%)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p115421768411"><a name="p115421768411"></a><a name="p115421768411"></a>可选参数。<span class="parmname" id="parmname1734984517812"><a name="parmname1734984517812"></a><a name="parmname1734984517812"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue134916451082"><a name="parmvalue134916451082"></a><a name="parmvalue134916451082"></a>“应用端”</span>时，可以配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p115421768411"><a name="p115421768411"></a><a name="p115421768411"></a>可选参数。<span class="parmname" id="parmname1734984517812"><a name="parmname1734984517812"></a><a name="parmname1734984517812"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue134916451082"><a name="parmvalue134916451082"></a><a name="parmvalue134916451082"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p1454215644116"><a name="p1454215644116"></a><a name="p1454215644116"></a>指待审计的应用端节点的CPU阈值，缺省值为<span class="parmvalue" id="parmvalue18165161114317"><a name="parmvalue18165161114317"></a><a name="parmvalue18165161114317"></a>“80”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p6464224104012"><a name="p6464224104012"></a><a name="p6464224104012"></a>80</p>
     </td>
     </tr>
-    <tr id="row14911327164010"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p18492172774016"><a name="p18492172774016"></a><a name="p18492172774016"></a>内存阈值(%)</p>
+    <tr id="row14911327164010"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p18492172774016"><a name="p18492172774016"></a><a name="p18492172774016"></a>内存阈值(%)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p3734613164114"><a name="p3734613164114"></a><a name="p3734613164114"></a>可选参数。<span class="parmname" id="parmname10159155016810"><a name="parmname10159155016810"></a><a name="parmname10159155016810"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue121595501780"><a name="parmvalue121595501780"></a><a name="parmvalue121595501780"></a>“应用端”</span>时，可以配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p3734613164114"><a name="p3734613164114"></a><a name="p3734613164114"></a>可选参数。<span class="parmname" id="parmname10159155016810"><a name="parmname10159155016810"></a><a name="parmname10159155016810"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue121595501780"><a name="parmvalue121595501780"></a><a name="parmvalue121595501780"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p2073551313415"><a name="p2073551313415"></a><a name="p2073551313415"></a>指待审计的应用端节点的内存阈值，缺省值为<span class="parmvalue" id="parmvalue11322142320434"><a name="parmvalue11322142320434"></a><a name="parmvalue11322142320434"></a>“80”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p84921627194013"><a name="p84921627194013"></a><a name="p84921627194013"></a>80</p>
     </td>
     </tr>
-    <tr id="row19648105334818"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p7649135319487"><a name="p7649135319487"></a><a name="p7649135319487"></a>操作系统</p>
+    <tr id="row19648105334818"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p7649135319487"><a name="p7649135319487"></a><a name="p7649135319487"></a>操作系统</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p16501353154818"><a name="p16501353154818"></a><a name="p16501353154818"></a>可选参数。<span class="parmname" id="parmname12206171714917"><a name="parmname12206171714917"></a><a name="parmname12206171714917"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue820641713497"><a name="parmvalue820641713497"></a><a name="parmvalue820641713497"></a>“应用端”</span>时，可以配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p16501353154818"><a name="p16501353154818"></a><a name="p16501353154818"></a>可选参数。<span class="parmname" id="parmname12206171714917"><a name="parmname12206171714917"></a><a name="parmname12206171714917"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue820641713497"><a name="parmvalue820641713497"></a><a name="parmvalue820641713497"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p1651413195494"><a name="p1651413195494"></a><a name="p1651413195494"></a>指待审计的应用端节点的操作系统，可以选择<span class="parmvalue" id="parmvalue61112313505"><a name="parmvalue61112313505"></a><a name="parmvalue61112313505"></a>“LINUX64”</span>或<span class="parmvalue" id="parmvalue044843717504"><a name="parmvalue044843717504"></a><a name="parmvalue044843717504"></a>“WINDOWS64”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1665018536487"><a name="p1665018536487"></a><a name="p1665018536487"></a>LINUX64</p>

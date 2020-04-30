@@ -1,4 +1,4 @@
-# 创建用户并授权使用DBSS<a name="ZH-CN_TOPIC_0169801941"></a>
+# 创建用户并授权使用DBSS<a name="dbss_01_0244"></a>
 
 如果您需要对您所拥有的DBSS进行精细的权限管理，您可以使用[统一身份认证服务](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)（Identity and Access Management，简称IAM），通过IAM，您可以：
 

@@ -1,6 +1,9 @@
-# 下载Agent<a name="ZH-CN_TOPIC_0208809337"></a>
+# 下载Agent<a name="dbss_01_0322"></a>
 
 Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>若您将添加的Agent删除，在重新添加Agent后，请重新下载Agent。  
 
 ## 前提条件<a name="section070891116319"></a>
 

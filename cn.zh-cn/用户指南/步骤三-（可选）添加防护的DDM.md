@@ -1,4 +1,4 @@
-# 步骤三：（可选）添加防护的DDM<a name="ZH-CN_TOPIC_0121926605"></a>
+# 步骤三：（可选）添加防护的DDM<a name="dbss_01_0153"></a>
 
 DDM即分布式数据库中间件（Distributed Database Middleware，简称DDM），专注于解决数据库分布式扩展问题，突破了传统数据库的容量和性能瓶颈，实现海量数据高并发访问。HexaTier支持以DDM作为受保护的数据库，并提供相应防护功能。
 

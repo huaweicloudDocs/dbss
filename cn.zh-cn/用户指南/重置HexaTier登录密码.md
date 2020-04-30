@@ -1,4 +1,4 @@
-# 重置HexaTier登录密码<a name="ZH-CN_TOPIC_0174953911"></a>
+# 重置HexaTier登录密码<a name="dbss_01_0255"></a>
 
 首次登录HexaTier，登录用户名为**admin**，默认密码为购买数据库安全防护时设置的HexaTier的登录密码。如果您忘记HexaTier登录密码，可以重置登录密码。
 
