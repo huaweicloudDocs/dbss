@@ -21,8 +21,8 @@
     **图 2**  查看SQL注入检测信息<a name="fig71914515113"></a>  
     ![](figures/查看SQL注入检测信息.png "查看SQL注入检测信息")
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >在列表右上方“全部风险等级“下拉列表框中选择SQL注入的风险等级，或输入SQL注入名称的关键字，可以搜索指定的SQL注入检测规则。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >在列表右上方“全部风险等级“下拉列表框中选择SQL注入的风险等级，或输入SQL注入名称的关键字，可以搜索指定的SQL注入检测规则。
 
     **表 1**  SQL注入检测信息参数说明
 

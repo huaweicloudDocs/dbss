@@ -274,6 +274,6 @@
 
 5.  单击“保存“。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->若要恢复风险引擎各参数为原始设置，请单击“重置“。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>若要恢复风险引擎各参数为原始设置，请单击“重置“。
 

@@ -32,8 +32,8 @@
 
 添加Agent方式的详细说明如[表1](#table218115952118)所示。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。
 
 **表 1**  添加Agent方式说明
 
@@ -153,8 +153,8 @@
     **图 7**  Agent添加完成<a name="fig18975172124811"></a>  
     ![](figures/Agent添加完成.png "Agent添加完成")
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >Agent添加完成后，请您确认添加的Agent信息正确。如果Agent添加不正确，请您在Agent所在行单击“删除“，删除Agent后，再重新添加Agent。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >Agent添加完成后，请您确认添加的Agent信息正确。如果Agent添加不正确，请您在Agent所在行单击“删除“，删除Agent后，再重新添加Agent。
 
 
 ## 添加Agent（RDS关系型数据库）<a name="section1568164924617"></a>
@@ -176,8 +176,8 @@
 
         在什么场景下需要选择“选择已有Agent“添加方式的详细介绍，请参见[在什么场景下需要选择“选择已有Agent”添加方式？](https://support.huaweicloud.com/dbss_faq/dbss_01_0286.html)。
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >选择“选择已有Agent“添加方式，如果您已在应用端安装了Agent，该数据库添加Agent后，数据库安全审计即可对该数据库进行审计。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >选择“选择已有Agent“添加方式，如果您已在应用端安装了Agent，该数据库添加Agent后，数据库安全审计即可对该数据库进行审计。
 
         **图 9**  选择已有Agent<a name="zh-cn_topic_0144723368_fig746421985110"></a>  
         ![](figures/选择已有Agent.png "选择已有Agent")
@@ -287,8 +287,8 @@
     **图 11**  Agent已添加完成<a name="fig1470611221310"></a>  
     ![](figures/Agent已添加完成.png "Agent已添加完成")
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >Agent添加完成后，请您确认添加的Agent信息正确。如果Agent添加不正确，请您在Agent所在行单击“删除“，删除Agent后，再重新添加Agent。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >Agent添加完成后，请您确认添加的Agent信息正确。如果Agent添加不正确，请您在Agent所在行单击“删除“，删除Agent后，再重新添加Agent。
 
 
 ## 后续处理<a name="section11581123681920"></a>

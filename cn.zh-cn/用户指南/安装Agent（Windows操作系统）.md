@@ -32,8 +32,8 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 安装Agent节点的详细说明如[表1](#dbss_01_0254_zh-cn_topic_0110856029_table4295843716304)所示。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端安装。
 
 **表 1**  安装Agent场景说明
 
@@ -84,16 +84,20 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
     -   如果该Windows主机已安装“Npcap“，请执行[2](#li536717914201)。
     -   如果该Windows主机未安装“Npcap“，请执行以下步骤：
         1.  请前往[https://nmap.org/npcap/](https://nmap.org/npcap/)下载Npcap最新软件安装包。
+
+            **图 5**  下载npcap<a name="fig172365020285"></a>  
+            ![](figures/下载npcap.png "下载npcap")
+
         2.  将下载好的npcap-_xxxx_.exe软件安装包上传至需要安装agent的虚拟机。
         3.  双击npcap软件安装包。
-        4.  在弹出的对话框中，单击“I Agree“，如[图5](#fig114541164118)所示。
+        4.  在弹出的对话框中，单击“I Agree“，如[图6](#fig114541164118)所示。
 
-            **图 5**  同意安装“Npcap“<a name="fig114541164118"></a>  
+            **图 6**  同意安装“Npcap“<a name="fig114541164118"></a>  
             ![](figures/同意安装Npcap.png "同意安装Npcap")
 
-        5.  在弹出的对话框中，单击“Install“，如[图6](#fig124541516111114)所示。
+        5.  在弹出的对话框中，单击“Install“，不勾选安装选项，如[图7](#fig124541516111114)所示。
 
-            **图 6**  安装“Npcap“<a name="fig124541516111114"></a>  
+            **图 7**  安装“Npcap“<a name="fig124541516111114"></a>  
             ![](figures/安装Npcap.png "安装Npcap")
 
         6.  在弹出的对话框中，单击“Next“。
@@ -109,9 +113,9 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 3.  将下载的Agent安装包“xxx.zip“复制到该主机任意一个目录下。
 4.  进入Agent安装包所在目录，并解压缩安装包。
 5.  进入解压后的文件夹，双击“install.bat“执行文件。
-6.  安装成功，界面如[图7](#fig1160640132710)所示，按任意键结束安装。
+6.  安装成功，界面如[图8](#fig1160640132710)所示，按任意键结束安装。
 
-    **图 7**  Agent安装成功<a name="fig1160640132710"></a>  
+    **图 8**  Agent安装成功<a name="fig1160640132710"></a>  
     ![](figures/Agent安装成功.png "Agent安装成功")
 
 7.  安装完成后，在Windows任务管理器中查看“dbss\_audit\_agent“进程。
@@ -124,17 +128,16 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 1.  <a name="dbss_01_0254_li0294761612"></a>Agent安装成功后，在数据库上执行一条SQL语句（例如“select \* from mysql.user limit 1“）。
 2.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 3.  验证Agent与数据库安全审计实例的网络通信正常。
-    1.  进入SQL语句列表入口，如[图8](#dbss_01_0254_fig1489915095118)所示。
+    1.  进入SQL语句列表入口，如[图9](#dbss_01_0254_fig1489915095118)所示。
 
-        **图 8**  进入SQL语句列表入口<a name="dbss_01_0254_fig1489915095118"></a>  
+        **图 9**  进入SQL语句列表入口<a name="dbss_01_0254_fig1489915095118"></a>  
         ![](figures/进入SQL语句列表入口.png "进入SQL语句列表入口")
 
-    2.  在“时间“所在行右侧，单击![](figures/icon-calendar.png)，选择开始时间和结束时间，单击“提交“，SQL语句列表将显示[1](#dbss_01_0254_li0294761612)中输入的SQL语句，如[图9](#dbss_01_0254_fig8994029155516)所示。
+    2.  在“时间“所在行右侧，单击![](figures/icon-calendar.png)，选择开始时间和结束时间，单击“提交“，SQL语句列表将显示[1](#dbss_01_0254_li0294761612)中输入的SQL语句，如[图10](#dbss_01_0254_fig8994029155516)所示。
 
-        **图 9**  查看SQL语句<a name="dbss_01_0254_fig8994029155516"></a>  
+        **图 10**  查看SQL语句<a name="dbss_01_0254_fig8994029155516"></a>  
         ![](figures/查看SQL语句.png "查看SQL语句")
 
-        -   如果SQL语句列表中显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信正常。
         -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](https://support.huaweicloud.com/dbss_faq/dbss_01_0246.html)处理。
 
 

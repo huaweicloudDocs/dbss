@@ -2,8 +2,8 @@
 
 数据库安全审计的SQL注入检测默认开启，您可以禁用或启用SQL注入的检测规则。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->一条审计数据只能命中SQL注入检测中的一个规则。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>一条审计数据只能命中SQL注入检测中的一个规则。
 
 ## 前提条件<a name="section070891116319"></a>
 

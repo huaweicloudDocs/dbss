@@ -132,9 +132,9 @@ SSL安全设置包括：
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   TLS 1.0只是为了兼容MySQL，存在安全隐患，请谨慎使用。  
-    >-   由于DDM不支持SSL连接，因此，HexaTier与DDM之间的连接为非加密连接。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >-   TLS 1.0只是为了兼容MySQL，存在安全隐患，请谨慎使用。
+    >-   由于DDM不支持SSL连接，因此，HexaTier与DDM之间的连接为非加密连接。
 
 
 ## 添加新证书<a name="section517012911244"></a>

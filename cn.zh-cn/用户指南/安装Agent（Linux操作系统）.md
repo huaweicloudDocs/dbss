@@ -32,8 +32,8 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 安装Agent节点的详细说明如[表1](#zh-cn_topic_0110856029_table4295843716304)所示。
 
->![](public_sys-resources/icon-notice.gif) **须知：**   
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。  
+>![](public_sys-resources/icon-notice.gif) **须知：** 
+>当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端安装。
 
 **表 1**  安装Agent场景说明
 
@@ -122,8 +122,8 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
     install dbss audit agent done!
     ```
 
-    >![](public_sys-resources/icon-notice.gif) **须知：**   
-    >如果Agent安装失败，请您确认安装节点的运行系统是否满足Linux操作系统要求，并重新安装Agent。  
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >如果Agent安装失败，请您确认安装节点的运行系统是否满足Linux操作系统要求，并重新安装Agent。
 
 8.  执行以下命令，查看Agent程序的运行状态。
 
@@ -151,7 +151,6 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
         **图 6**  查看SQL语句<a name="fig8994029155516"></a>  
         ![](figures/查看SQL语句.png "查看SQL语句")
 
-        -   如果SQL语句列表中显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信正常。
         -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](https://support.huaweicloud.com/dbss_faq/dbss_01_0246.html)处理。
 
 
