@@ -3,7 +3,7 @@
 Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
->若您将添加的Agent删除，在重新添加Agent后，请重新下载Agent。
+>每个Agent都有唯一的AgentID，是Agent连接数据库安全审计实例的重要密钥。若您将添加的Agent删除，在重新添加Agent后，请重新下载Agent。
 
 ## 前提条件<a name="section070891116319"></a>
 
@@ -11,8 +11,6 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 -   数据库已成功添加Agent。
 
 ## 操作步骤<a name="section1568164924617"></a>
-
-如果您需要在多个节点上安装Agent，您只需要将一个Agent安装包下载到本地后，就可以安装Agent。
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 2.  进入数据库列表入口，如[图1](#zh-cn_topic_0144723368_fig4155162273613)所示。
