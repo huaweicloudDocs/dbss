@@ -21,7 +21,7 @@
 
 1.  <a name="li16514141414819"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
-    在IAM控制台创建用户组，并授予数据库安全服务管理员权限“DBSS System Administrator“。
+    在IAM控制台创建用户组，并授予数据库安全服务管理员权限“DBSS Security Administrator“。
 
 2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
@@ -31,6 +31,6 @@
 
     新创建的用户登录控制台，切换至授权区域，验证权限：
 
-    在“服务列表“中选择除数据库安全服务外（假设当前策略仅包含“DBSS System Administrator“）的任一服务，若提示权限不足，表示“DBSS System Administrator“已生效。
+    **验证方式（参考）：**您可以尝试开启或关闭实例，此时如果提示“您的权限不足”，则表示设置的“DBSS Security Administrator“数据库安全服务安全管理员角色已生效。
 
 

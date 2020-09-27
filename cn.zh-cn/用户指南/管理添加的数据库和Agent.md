@@ -47,7 +47,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="61%" headers="mcps1.2.4.1.2 "><p id="p5793204619512"><a name="p5793204619512"></a><a name="p5793204619512"></a>数据库的编码字符集。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1779314615513"><a name="p1779314615513"></a><a name="p1779314615513"></a>UTF-8</p>
+    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1779314615513"><a name="p1779314615513"></a><a name="p1779314615513"></a>UTF8</p>
     </td>
     </tr>
     <tr id="row121453182104"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.4.1.1 "><p id="p8145151818109"><a name="p8145151818109"></a><a name="p8145151818109"></a>IP地址/端口</p>
@@ -137,6 +137,11 @@
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p1544594615392"><a name="p1544594615392"></a><a name="p1544594615392"></a>安装Agent的节点的IP地址。</p>
     </td>
     </tr>
+    <tr id="row364194913598"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p20641249185919"><a name="p20641249185919"></a><a name="p20641249185919"></a>操作系统</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p06424975911"><a name="p06424975911"></a><a name="p06424975911"></a>安装Agent运行的操作系统。</p>
+    </td>
+    </tr>
     <tr id="row06233118374"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p362131103717"><a name="p362131103717"></a><a name="p362131103717"></a>审计网卡名称</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p478844114409"><a name="p478844114409"></a><a name="p478844114409"></a>安装节点的网卡名称。</p>
@@ -150,6 +155,13 @@
     <tr id="row14911327164010"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p18492172774016"><a name="p18492172774016"></a><a name="p18492172774016"></a>内存阈值(%)</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p2073551313415"><a name="p2073551313415"></a><a name="p2073551313415"></a>安装节点的内存阈值，缺省值为<span class="parmvalue" id="parmvalue11322142320434"><a name="parmvalue11322142320434"></a><a name="parmvalue11322142320434"></a>“80”</span>。</p>
+    </td>
+    </tr>
+    <tr id="row19965942805"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p1496574211014"><a name="p1496574211014"></a><a name="p1496574211014"></a>通用</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p6965642302"><a name="p6965642302"></a><a name="p6965642302"></a>Agent是否为通用Agent。</p>
+    <p id="p690912171513"><a name="p690912171513"></a><a name="p690912171513"></a>否：需要用户下载Agent，并在<span class="parmvalue" id="parmvalue11214542113"><a name="parmvalue11214542113"></a><a name="parmvalue11214542113"></a>“数据库端”</span>或<span class="parmvalue" id="parmvalue15215114210110"><a name="parmvalue15215114210110"></a><a name="parmvalue15215114210110"></a>“应用端”</span>安装Agent。</p>
+    <p id="p1572452285910"><a name="p1572452285910"></a><a name="p1572452285910"></a>是：不需要用户手动进行安装Agent。</p>
     </td>
     </tr>
     <tr id="row116912045932"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p166915454317"><a name="p166915454317"></a><a name="p166915454317"></a>运行状态</p>

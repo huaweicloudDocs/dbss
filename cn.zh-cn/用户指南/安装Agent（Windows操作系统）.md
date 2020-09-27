@@ -125,7 +125,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
 ## 效果验证<a name="section11138753619"></a>
 
-1.  <a name="dbss_01_0254_li0294761612"></a>Agent安装成功后，在数据库上执行一条SQL语句（例如“select \* from mysql.user limit 1“）。
+1.  <a name="dbss_01_0254_li0294761612"></a>Agent安装成功后，在数据库上执行一条SQL语句（例如“show databases“）。
 2.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
 3.  验证Agent与数据库安全审计实例的网络通信正常。
     1.  进入SQL语句列表入口，如[图9](#dbss_01_0254_fig1489915095118)所示。

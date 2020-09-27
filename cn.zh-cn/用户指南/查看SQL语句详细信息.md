@@ -27,6 +27,9 @@
     -   选择“风险等级“（“全部“、“高“、“中“、“低“或“信任“），单击“提交“，列表显示该级别的SQL语句。
     -   单击“高级选项“后的![](figures/icon-drop.png)，输入相关信息，如[图3](#fig588352620222)所示，单击“提交“，列表显示该选项的SQL语句。
 
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >一次查询最多可查询10,000条记录。
+
         **图 3**  高级选项信息<a name="fig588352620222"></a>  
         ![](figures/高级选项信息.png "高级选项信息")
 
@@ -36,6 +39,9 @@
     ![](figures/查看SQL语句详情.png "查看SQL语句详情")
 
 5.  在“详情“提示框中，查看SQL语句的详细信息，如[图5](#fig138071753181812)所示，相关参数说明如[表1](#table14884152602217)所示。
+
+    >![](public_sys-resources/icon-notice.gif) **须知：** 
+    >审计语句和结果集的长度限制为10,240字节。超出部分，系统将不记录在审计日志中。
 
     **图 5** “详情“提示框<a name="fig138071753181812"></a>  
     ![](figures/详情提示框.png "详情提示框")
@@ -69,19 +75,34 @@
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p41351154153111"><a name="p41351154153111"></a><a name="p41351154153111"></a>执行SQL语句的数据库用户。</p>
     </td>
     </tr>
+    <tr id="row1026112617449"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p9381183113444"><a name="p9381183113444"></a><a name="p9381183113444"></a>客户端MAC地址</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p202625265445"><a name="p202625265445"></a><a name="p202625265445"></a>执行SQL语句所在客户端MAC地址。</p>
+    </td>
+    </tr>
+    <tr id="row20490164511449"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p11490545184410"><a name="p11490545184410"></a><a name="p11490545184410"></a>数据库MAC地址</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p1349064510446"><a name="p1349064510446"></a><a name="p1349064510446"></a>执行SQL语句所在数据库MAC地址。</p>
+    </td>
+    </tr>
+    <tr id="row16434161344511"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p20715121419457"><a name="p20715121419457"></a><a name="p20715121419457"></a>客户端IP</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p187151145457"><a name="p187151145457"></a><a name="p187151145457"></a>执行SQL语句所在客户端的IP地址。</p>
+    </td>
+    </tr>
     <tr id="row877152318326"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p777152343211"><a name="p777152343211"></a><a name="p777152343211"></a>数据库IP</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p1777142393212"><a name="p1777142393212"></a><a name="p1777142393212"></a>执行SQL语句所在的数据库的IP地址。</p>
     </td>
     </tr>
-    <tr id="row58101733173213"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p12810123315325"><a name="p12810123315325"></a><a name="p12810123315325"></a>数据库端口</p>
+    <tr id="row58101733173213"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p12810123315325"><a name="p12810123315325"></a><a name="p12810123315325"></a>客户端端口</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p10843203013367"><a name="p10843203013367"></a><a name="p10843203013367"></a>执行SQL语句所在的数据库的端口。</p>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p10843203013367"><a name="p10843203013367"></a><a name="p10843203013367"></a>执行SQL语句所在的客户端的端口。</p>
     </td>
     </tr>
-    <tr id="row8884172642219"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p15884152612224"><a name="p15884152612224"></a><a name="p15884152612224"></a>客户端IP</p>
+    <tr id="row8884172642219"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p18294192714516"><a name="p18294192714516"></a><a name="p18294192714516"></a>数据库端口</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p888492614226"><a name="p888492614226"></a><a name="p888492614226"></a>执行SQL语句所在客户端的IP地址。</p>
+    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p329410278457"><a name="p329410278457"></a><a name="p329410278457"></a>执行SQL语句所在的数据库的端口。</p>
     </td>
     </tr>
     <tr id="row1285510419334"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p48551946338"><a name="p48551946338"></a><a name="p48551946338"></a>客户端名称</p>
@@ -117,11 +138,6 @@
     <tr id="row19482153613412"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p048273613343"><a name="p048273613343"></a><a name="p048273613343"></a>应结束时间</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p13482113614348"><a name="p13482113614348"></a><a name="p13482113614348"></a>SQL语句结束的时间。</p>
-    </td>
-    </tr>
-    <tr id="row1871315511349"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p167131351163418"><a name="p167131351163418"></a><a name="p167131351163418"></a>审计结果</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p207131751113412"><a name="p207131751113412"></a><a name="p207131751113412"></a>SQL语句的审计结果。</p>
     </td>
     </tr>
     <tr id="row1199125143518"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p19991354357"><a name="p19991354357"></a><a name="p19991354357"></a>SQL请求语句</p>
