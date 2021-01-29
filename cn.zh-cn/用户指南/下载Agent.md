@@ -1,6 +1,6 @@
 # 下载Agent<a name="dbss_01_0322"></a>
 
-Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
+安全组规则添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent。
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >每个Agent都有唯一的AgentID，是Agent连接数据库安全审计实例的重要密钥。若您将添加的Agent删除，在重新添加Agent后，请重新下载Agent。
@@ -13,12 +13,12 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 ## 操作步骤<a name="section1568164924617"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入数据库列表入口，如[图1](#zh-cn_topic_0144723368_fig4155162273613)所示。
+2.  进入数据库列表入口，如[图1](#fig4113181714197)所示。
 
-    **图 1**  进入数据库列表入口<a name="zh-cn_topic_0144723368_fig4155162273613"></a>  
+    **图 1**  进入数据库列表入口<a name="fig4113181714197"></a>  
     ![](figures/进入数据库列表入口.png "进入数据库列表入口")
 
-3.  单击数据库左侧的![](figures/icon-drop.png)展开Agent的详细信息，在Agent所在行的“操作“列，单击“下载agent“，如[图2](#fig1470611221310)所示。将Agent安装包下载到本地。
+3.  单击数据库左侧的![](figures/icon-drop-0.png)展开Agent的详细信息，在Agent所在行的“操作“列，单击“下载agent“，如[图2](#fig1470611221310)所示。将Agent安装包下载到本地。
 
     **图 2**  下载Agent<a name="fig1470611221310"></a>  
     ![](figures/下载Agent.png "下载Agent")

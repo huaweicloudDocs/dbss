@@ -1,6 +1,6 @@
 # 安装Agent（Linux操作系统）<a name="dbss_01_0254"></a>
 
-Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
+安装Agent后，你才能开启数据库安全审计。通过本节介绍，您将了解如何在Linux操作系统的节点上安装Agent。Windows操作系统的Agent安装请参见[安装Agent（Windows操作系统）](安装Agent（Windows操作系统）.md)。
 
 ## 前提条件<a name="section070891116319"></a>
 
@@ -108,6 +108,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
         2.  确认有安装脚本执行权限后，请执行[7](#li144058161155)。
 
+
 7.  <a name="li144058161155"></a>执行以下命令，安装Agent。
 
     **sh** **install.sh**
@@ -135,29 +136,6 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
     audit agent is running.
     ```
 
-
-## 效果验证<a name="section159134316157"></a>
-
-1.  <a name="li0294761612"></a>Agent安装成功后，在数据库上执行一条SQL语句（例如“show databases“）。
-2.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-3.  验证Agent与数据库安全审计实例的网络通信正常。
-    1.  进入SQL语句列表入口，如[图5](#fig1489915095118)所示。
-
-        **图 5**  进入SQL语句列表入口<a name="fig1489915095118"></a>  
-        ![](figures/进入SQL语句列表入口.png "进入SQL语句列表入口")
-
-    2.  在“时间“所在行右侧，单击![](figures/icon-calendar.png)，选择开始时间和结束时间，单击“提交“，SQL语句列表将显示[1](#li0294761612)中输入的SQL语句，如[图6](#fig8994029155516)所示。
-
-        **图 6**  查看SQL语句<a name="fig8994029155516"></a>  
-        ![](figures/查看SQL语句.png "查看SQL语句")
-
-        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](https://support.huaweicloud.com/dbss_faq/dbss_01_0246.html)处理。
-
-
-
-## 后续处理<a name="section11581123681920"></a>
-
-数据库安全审计默认提供一条“全审计规则“的审计范围，可以对成功连接数据库安全审计实例的所有数据库进行安全审计。Agent安装完成后，您可以查看被添加的数据库的审计结果。详细操作，请参见[查看审计结果](查看审计总览信息.md)。
 
 ## 相关操作<a name="section3657198173220"></a>
 

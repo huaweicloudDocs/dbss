@@ -11,13 +11,12 @@
 ## 查看数据库信息<a name="section1128063120241"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入数据库列表入口，如[图1](#dbss_01_0322_zh-cn_topic_0144723368_fig4155162273613)所示。
+2.  进入数据库列表入口，如[图1](#dbss_01_0322_fig4113181714197)所示。
 
-    **图 1**  进入数据库列表入口<a name="dbss_01_0322_zh-cn_topic_0144723368_fig4155162273613"></a>  
+    **图 1**  进入数据库列表入口<a name="dbss_01_0322_fig4113181714197"></a>  
     ![](figures/进入数据库列表入口.png "进入数据库列表入口")
 
-3.  在“选择实例“下拉列表框中，选择查看的数据库所属的实例。
-4.  查看数据库信息，如[图2](#fig315603514243)所示，相关参数说明如[表1](#table4295843716304)所示。
+3.  查看数据库信息，如[图2](#fig315603514243)所示，相关参数说明如[表1](#table4295843716304)所示。
 
     **图 2**  查看数据库和Agent信息<a name="fig315603514243"></a>  
     ![](figures/查看数据库和Agent信息.png "查看数据库和Agent信息")
@@ -103,9 +102,9 @@
 ## 查看Agent信息<a name="section17294193018518"></a>
 
 1.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-2.  进入数据库列表入口，如[图3](#dbss_01_0322_zh-cn_topic_0144723368_fig4155162273613_1)所示。
+2.  进入数据库列表入口，如[图3](#dbss_01_0322_fig4113181714197_1)所示。
 
-    **图 3**  进入数据库列表入口<a name="dbss_01_0322_zh-cn_topic_0144723368_fig4155162273613_1"></a>  
+    **图 3**  进入数据库列表入口<a name="dbss_01_0322_fig4113181714197_1"></a>  
     ![](figures/进入数据库列表入口.png "进入数据库列表入口")
 
 3.  单击数据库左侧的![](figures/icon-drop.png)展开Agent的详细信息，如[图4](#fig1280134145116)所示，相关参数说明如[表2](#table146922503232)所示。
@@ -150,18 +149,20 @@
     <tr id="row246482404017"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p1646411249407"><a name="p1646411249407"></a><a name="p1646411249407"></a>CPU阈值(%)</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p1454215644116"><a name="p1454215644116"></a><a name="p1454215644116"></a>安装节点的CPU阈值，缺省值为<span class="parmvalue" id="parmvalue18165161114317"><a name="parmvalue18165161114317"></a><a name="parmvalue18165161114317"></a>“80”</span>。</p>
+    <div class="note" id="note67317101625"><a name="note67317101625"></a><a name="note67317101625"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p18739101325"><a name="p18739101325"></a><a name="p18739101325"></a>当安装节点的CPU超过设定的阈值时，Agent将停止工作。您可以直接升级服务器的CPU。</p>
+    </div></div>
     </td>
     </tr>
     <tr id="row14911327164010"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p18492172774016"><a name="p18492172774016"></a><a name="p18492172774016"></a>内存阈值(%)</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p2073551313415"><a name="p2073551313415"></a><a name="p2073551313415"></a>安装节点的内存阈值，缺省值为<span class="parmvalue" id="parmvalue11322142320434"><a name="parmvalue11322142320434"></a><a name="parmvalue11322142320434"></a>“80”</span>。</p>
+    <div class="note" id="note193571355350"><a name="note193571355350"></a><a name="note193571355350"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p6357455959"><a name="p6357455959"></a><a name="p6357455959"></a>当安装节点的内存超过设定的阈值时，Agent将停止工作。您可以直接升级服务器的内存。</p>
+    </div></div>
     </td>
     </tr>
     <tr id="row19965942805"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p1496574211014"><a name="p1496574211014"></a><a name="p1496574211014"></a>通用</p>
     </td>
     <td class="cellrowborder" valign="top" width="74.39%" headers="mcps1.2.3.1.2 "><p id="p6965642302"><a name="p6965642302"></a><a name="p6965642302"></a>Agent是否为通用Agent。</p>
-    <p id="p690912171513"><a name="p690912171513"></a><a name="p690912171513"></a>否：需要用户下载Agent，并在<span class="parmvalue" id="parmvalue11214542113"><a name="parmvalue11214542113"></a><a name="parmvalue11214542113"></a>“数据库端”</span>或<span class="parmvalue" id="parmvalue15215114210110"><a name="parmvalue15215114210110"></a><a name="parmvalue15215114210110"></a>“应用端”</span>安装Agent。</p>
-    <p id="p1572452285910"><a name="p1572452285910"></a><a name="p1572452285910"></a>是：不需要用户手动进行安装Agent。</p>
     </td>
     </tr>
     <tr id="row116912045932"><td class="cellrowborder" valign="top" width="25.61%" headers="mcps1.2.3.1.1 "><p id="p166915454317"><a name="p166915454317"></a><a name="p166915454317"></a>运行状态</p>

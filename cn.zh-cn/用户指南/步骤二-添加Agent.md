@@ -1,13 +1,13 @@
 # 步骤二：添加Agent<a name="dbss_01_0188"></a>
 
-添加的数据库开启审计功能后，您还需要为添加的数据库选择添加Agent的方式。数据库安全审计支持对华为云上的ECS/BMS自建数据库和RDS关系型数据库进行审计，请根据您在华为云上实际部署的数据库选择Agent添加方式。
+将待审计数据库添加至数据库安全审计实例后，您需要根据您在云上实际部署的数据库选择添加Agent的方式以及在应用端或数据库端安装Agent。Agent程序会获取访问数据库流量、将流量数据上传到审计系统、接收审计系统配置命令和上报数据库状态监控数据，帮助您实现对数据库的安全审计。
 
-完成添加Agent后，您还需要根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
+完成添加Agent后，您还需要为Agent安装节点所在的安全组添加入方向规则TCP协议（8000端口）和UDP协议（7000-7100端口），使Agent与审计实例之间的网络连通，数据库安全审计才能对添加的数据库进行审计。
 
 ## 前提条件<a name="section070891116319"></a>
 
 -   已成功购买数据库安全审计实例，且实例的状态为“运行中“。
--   已成功添加数据库并开启审计功能。
+-   已成功添加数据库。
 
 ## 常见场景<a name="section984415120154"></a>
 
@@ -64,7 +64,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p429035913213"><a name="p429035913213"></a><a name="p429035913213"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择<span class="parmname" id="parmname108671446165513"><a name="parmname108671446165513"></a><a name="parmname108671446165513"></a>“安装节点类型”</span>后，其他数据库选择“选择已有Agent”添加方式。</li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择<span class="parmname" id="parmname108671446165513"><a name="parmname108671446165513"></a><a name="parmname108671446165513"></a>“安装节点类型”</span>后，其他数据库选择“选择已有Agent”添加方式。</li><li>当某个应用端连接多个RDS时，所有连接该应用端的RDS关系型数据库都需要添加Agent。当其中一个RDS选择<span class="parmname" id="parmname20164124182217"><a name="parmname20164124182217"></a><a name="parmname20164124182217"></a>“安装节点类型”</span>后，其余RDS添加Agent时，选择<span class="parmname" id="parmname1066911505229"><a name="parmname1066911505229"></a><a name="parmname1066911505229"></a>“选择已有Agent”</span>添加方式。详细操作请参见<a href="#li17692165032313">•“添加方式”选择“选择已有Agent”</a></li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
 </td>
 </tr>
 <tr id="row01451041229"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p91462482214"><a name="p91462482214"></a><a name="p91462482214"></a>RDS关系型数据库</p>
@@ -170,16 +170,16 @@
     **图 8**  进入添加Agent入口<a name="dbss_01_0188_fig4155162273613"></a>  
     ![](figures/进入添加Agent入口.png "进入添加Agent入口")
 
-3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#zh-cn_topic_0144723368_fig746421985110)和[图10](#fig2692155012314)所示，相关参数说明如[表3](#table146922503232)所示。
+3.  在弹出的“添加Agent“对话框中，选择添加方式，如[图9](#fig729959124017)和[图10](#fig9653154665)所示，相关参数说明如[表3](#table146922503232)所示。
 
-    -   “添加方式“选择“选择已有Agent“
+    -   <a name="li17692165032313"></a>“添加方式“选择“选择已有Agent“
 
         在什么场景下需要选择“选择已有Agent“添加方式的详细介绍，请参见[在什么场景下需要选择“选择已有Agent”添加方式？](https://support.huaweicloud.com/dbss_faq/dbss_01_0286.html)。
 
         >![](public_sys-resources/icon-note.gif) **说明：** 
         >选择“选择已有Agent“添加方式，如果您已在应用端安装了Agent，该数据库添加Agent后，数据库安全审计即可对该数据库进行审计。
 
-        **图 9**  选择已有Agent<a name="zh-cn_topic_0144723368_fig746421985110"></a>  
+        **图 9**  选择已有Agent<a name="fig729959124017"></a>  
         ![](figures/选择已有Agent.png "选择已有Agent")
 
     -   “添加方式“选择“创建Agent“
@@ -188,8 +188,9 @@
 
         “安装节点类型“选择“应用端“，“安装节点IP“输入应用端内网IP地址。
 
-        **图 10**  在应用端添加Agent<a name="fig2692155012314"></a>  
+        **图 10**  在应用端添加Agent<a name="fig9653154665"></a>  
         ![](figures/在应用端添加Agent.png "在应用端添加Agent")
+
 
     **表 3**  添加Agent参数说明（RDS关系型数据库）
 
@@ -204,7 +205,7 @@
     </thead>
     <tbody><tr id="row769315010235"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p6693145015238"><a name="p6693145015238"></a><a name="p6693145015238"></a>添加方式</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><div class="p" id="p5693155082313"><a name="p5693155082313"></a><a name="p5693155082313"></a>您可以选择Agent的添加方式。<a name="zh-cn_topic_0144723368_ul169686224815"></a><a name="zh-cn_topic_0144723368_ul169686224815"></a><ul id="zh-cn_topic_0144723368_ul169686224815"><li>选择已有Agent<p id="zh-cn_topic_0144723368_p29682021486"><a name="zh-cn_topic_0144723368_p29682021486"></a><a name="zh-cn_topic_0144723368_p29682021486"></a>当某个应用端连接了多个数据库时，如果该应用端的一个数据库已经在应用端添加了Agent。其他数据库在添加Agent时，只需要选择<span class="parmvalue" id="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a><a name="zh-cn_topic_0144723368_zh-cn_topic_0198815234_parmvalue19921182012126"></a>“选择已有Agent”</span>添加方式。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><div class="p" id="p5693155082313"><a name="p5693155082313"></a><a name="p5693155082313"></a>您可以选择Agent的添加方式。<a name="dbss_01_0188_ul169686224815"></a><a name="dbss_01_0188_ul169686224815"></a><ul id="dbss_01_0188_ul169686224815"><li>选择已有Agent<p id="dbss_01_0188_p29682021486"><a name="dbss_01_0188_p29682021486"></a><a name="dbss_01_0188_p29682021486"></a>当某个应用端连接了多个数据库时，如果该应用端的一个数据库已经在应用端添加了Agent。其他数据库在添加Agent时，只需要选择<span class="parmvalue" id="dbss_01_0188_zh-cn_topic_0198815234_parmvalue19921182012126"><a name="dbss_01_0188_zh-cn_topic_0198815234_parmvalue19921182012126"></a><a name="dbss_01_0188_zh-cn_topic_0198815234_parmvalue19921182012126"></a>“选择已有Agent”</span>添加方式。</p>
     </li><li>创建Agent<p id="p510888134217"><a name="p510888134217"></a><a name="p510888134217"></a>如果待添加Agent的数据库需要创建Agent，请创建新的Agent。</p>
     </li></ul>
     </div>
@@ -212,24 +213,24 @@
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p5693155018234"><a name="p5693155018234"></a><a name="p5693155018234"></a>创建Agent</p>
     </td>
     </tr>
-    <tr id="row16693115019236"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p12693950112315"><a name="p12693950112315"></a><a name="p12693950112315"></a>数据库名称</p>
+    <tr id="row172361819130"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p19303991133"><a name="p19303991133"></a><a name="p19303991133"></a>数据库名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p1069313500233"><a name="p1069313500233"></a><a name="p1069313500233"></a>可选参数。当<span class="parmname" id="zh-cn_topic_0144723368_parmname1496911284813"><a name="zh-cn_topic_0144723368_parmname1496911284813"></a><a name="zh-cn_topic_0144723368_parmname1496911284813"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue1496992144815"><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a><a name="zh-cn_topic_0144723368_parmvalue1496992144815"></a>“选择已有Agent”</span>时，可以选择实例下已添加Agent的数据库。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p230359111320"><a name="p230359111320"></a><a name="p230359111320"></a>可选参数。当<span class="parmname" id="parmname143039941310"><a name="parmname143039941310"></a><a name="parmname143039941310"></a>“添加方式”</span>选择<span class="parmvalue" id="parmvalue12304499136"><a name="parmvalue12304499136"></a><a name="parmvalue12304499136"></a>“选择已有Agent”</span>时，可以选择实例下已添加Agent的数据库。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p4693750142315"><a name="p4693750142315"></a><a name="p4693750142315"></a>test1</p>
+    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p030413920132"><a name="p030413920132"></a><a name="p030413920132"></a>tesT</p>
     </td>
     </tr>
-    <tr id="row6693115010235"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p0693145011230"><a name="p0693145011230"></a><a name="p0693145011230"></a>Agent ID</p>
+    <tr id="row103134511136"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p173041198139"><a name="p173041198139"></a><a name="p173041198139"></a>Agent ID</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p3693115010237"><a name="p3693115010237"></a><a name="p3693115010237"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname3969122104811"><a name="zh-cn_topic_0144723368_parmname3969122104811"></a><a name="zh-cn_topic_0144723368_parmname3969122104811"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue14969329489"><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a><a name="zh-cn_topic_0144723368_parmvalue14969329489"></a>“选择已有Agent”</span>时，需配置该参数。</p>
-    <p id="p1669475020234"><a name="p1669475020234"></a><a name="p1669475020234"></a>您可以选择实例下已添加的Agent ID，Agent ID由系统自动生成。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p13041691135"><a name="p13041691135"></a><a name="p13041691135"></a>当<span class="parmname" id="parmname030411919139"><a name="parmname030411919139"></a><a name="parmname030411919139"></a>“添加方式”</span>选择<span class="parmvalue" id="parmvalue530479181317"><a name="parmvalue530479181317"></a><a name="parmvalue530479181317"></a>“选择已有Agent”</span>时，需配置该参数。</p>
+    <p id="p7304690136"><a name="p7304690136"></a><a name="p7304690136"></a>您可以选择实例下已添加的Agent ID，Agent ID由系统自动生成。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p1869465018236"><a name="p1869465018236"></a><a name="p1869465018236"></a>-</p>
+    <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p163041790131"><a name="p163041790131"></a><a name="p163041790131"></a>-</p>
     </td>
     </tr>
     <tr id="row12694175032314"><td class="cellrowborder" valign="top" width="20.990000000000002%" headers="mcps1.2.4.1.1 "><p id="p76945501231"><a name="p76945501231"></a><a name="p76945501231"></a>安装节点类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p6694155012231"><a name="p6694155012231"></a><a name="p6694155012231"></a>当<span class="parmname" id="zh-cn_topic_0144723368_parmname297062194815"><a name="zh-cn_topic_0144723368_parmname297062194815"></a><a name="zh-cn_topic_0144723368_parmname297062194815"></a>“添加方式”</span>选择<span class="parmvalue" id="zh-cn_topic_0144723368_parmvalue6970223486"><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a><a name="zh-cn_topic_0144723368_parmvalue6970223486"></a>“创建Agent”</span>时，需配置该参数。</p>
+    <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p6694155012231"><a name="p6694155012231"></a><a name="p6694155012231"></a>当<span class="parmname" id="dbss_01_0188_parmname297062194815"><a name="dbss_01_0188_parmname297062194815"></a><a name="dbss_01_0188_parmname297062194815"></a>“添加方式”</span>选择<span class="parmvalue" id="dbss_01_0188_parmvalue6970223486"><a name="dbss_01_0188_parmvalue6970223486"></a><a name="dbss_01_0188_parmvalue6970223486"></a>“创建Agent”</span>时，需配置该参数。</p>
     <p id="p769418506231"><a name="p769418506231"></a><a name="p769418506231"></a>审计RDS关系型数据库，需要选择<span class="parmvalue" id="parmvalue1769495019232"><a name="parmvalue1769495019232"></a><a name="parmvalue1769495019232"></a>“应用端”</span>。</p>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p18694135052320"><a name="p18694135052320"></a><a name="p18694135052320"></a>应用端</p>
@@ -293,5 +294,5 @@
 
 ## 后续处理<a name="section11581123681920"></a>
 
-Agent添加完成后，您还需要根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，数据库安全审计才能对添加的数据库进行审计。有关安装Agent的详细操作，请参见[安装Agent](安装Agent（Linux操作系统）.md)。
+Agent添加完成后，您还需要为数据库安全审计实例所在的安全组添加入方向规则TCP协议（8000端口）和UDP协议（7000-7100端口），使Agent与审计实例之间的网络连通，数据库安全审计才能对添加的数据库进行审计。有关添加安全组规则的详细操作，请参见[添加安全组规则](步骤三-添加安全组规则.md)。
 

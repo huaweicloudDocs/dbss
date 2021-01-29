@@ -1,11 +1,11 @@
 # 安装Agent（Windows操作系统）<a name="dbss_01_0315"></a>
 
-Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式在数据库端或应用端安装Agent，将添加的数据库连接到数据库安全审计实例，才能使用数据库安全审计功能。
+安装Agent后，你才能开启数据库安全审计。通过本节介绍，您将了解如何在Windows操作系统的节点上安装Agent。Linux操作系统的Agent安装请参见[安装Agent（Linux操作系统）](安装Agent（Linux操作系统）.md)。
 
 ## 前提条件<a name="section070891116319"></a>
 
 -   已成功购买数据库安全审计实例，且实例的状态为“运行中“。
--   数据库已成功添加Agent。
+-   数据库已成功添加Agent
 -   已获取Windows操作系统Agent安装包。
 -   安装Agent节点的运行系统满足Windows系统版本要求。有关Windows系统版本的要求，请参见[Agent可以安装在哪些Windows操作系统上？](https://support.huaweicloud.com/dbss_faq/dbss_01_0318.html)。
 
@@ -109,6 +109,7 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
             ![](figures/NPCAP安装完成.png)
 
 
+
 2.  <a name="li536717914201"></a>以“Administrator“用户登录到Windows主机。
 3.  将下载的Agent安装包“xxx.zip“复制到该主机任意一个目录下。
 4.  进入Agent安装包所在目录，并解压缩安装包。
@@ -122,29 +123,6 @@ Agent添加完成后，您还需要下载Agent，并根据Agent的添加方式�
 
     如果进程不存在，说明Agent安装失败，请尝试重新安装Agent。
 
-
-## 效果验证<a name="section11138753619"></a>
-
-1.  <a name="dbss_01_0254_li0294761612"></a>Agent安装成功后，在数据库上执行一条SQL语句（例如“show databases“）。
-2.  [登录管理控制台](https://console.huaweicloud.com/?locale=zh-cn)。
-3.  验证Agent与数据库安全审计实例的网络通信正常。
-    1.  进入SQL语句列表入口，如[图9](#dbss_01_0254_fig1489915095118)所示。
-
-        **图 9**  进入SQL语句列表入口<a name="dbss_01_0254_fig1489915095118"></a>  
-        ![](figures/进入SQL语句列表入口.png "进入SQL语句列表入口")
-
-    2.  在“时间“所在行右侧，单击![](figures/icon-calendar.png)，选择开始时间和结束时间，单击“提交“，SQL语句列表将显示[1](#dbss_01_0254_li0294761612)中输入的SQL语句，如[图10](#dbss_01_0254_fig8994029155516)所示。
-
-        **图 10**  查看SQL语句<a name="dbss_01_0254_fig8994029155516"></a>  
-        ![](figures/查看SQL语句.png "查看SQL语句")
-
-        -   如果SQL语句列表中未显示输入的SQL语句，说明Agent与数据库安全审计实例之间网络通信异常，请参照[如何处理Agent与数据库安全审计实例之间通信异常？](https://support.huaweicloud.com/dbss_faq/dbss_01_0246.html)处理。
-
-
-
-## 后续处理<a name="section11581123681920"></a>
-
-数据库安全审计默认提供一条“全审计规则“的审计范围，可以对成功连接数据库安全审计实例的所有数据库进行安全审计。Agent安装完成后，您可以查看被添加的数据库的审计结果。详细操作，请参见[查看审计结果](查看审计总览信息.md)。
 
 ## 相关操作<a name="section3657198173220"></a>
 
