@@ -33,7 +33,8 @@
 添加Agent方式的详细说明如[表1](#table218115952118)所示。
 
 >![](public_sys-resources/icon-notice.gif) **须知：** 
->当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。
+>-   当您的应用和数据库（ECS/BMS自建数据库）都部署在同一个节点上时，Agent需在数据库端添加。
+>-   数据库安全审计还支持批量部署流量采集Agent，针对大规模业务场景（容器化部署应用、数据库（RDS关系型数据库）数量大），能够显著提升产品配置的效率，降低配置的复杂度，减少运维人员的日常维护压力。详细操作步骤，请参见[容器化部署数据库安全审计Agent](https://support.huaweicloud.com/bestpractice-dbss/dbss_06_0007.html)。
 
 **表 1**  添加Agent方式说明
 
@@ -64,7 +65,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="29.587041295870414%" headers="mcps1.2.5.1.3 "><p id="p429035913213"><a name="p429035913213"></a><a name="p429035913213"></a>可以审计该应用端与其连接的所有数据库的访问记录。</p>
 </td>
-<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接了多个RDS时，所有连接该应用端的RDS都需要添加Agent。某个数据库选择<span class="parmname" id="parmname108671446165513"><a name="parmname108671446165513"></a><a name="parmname108671446165513"></a>“安装节点类型”</span>后，其他数据库选择“选择已有Agent”添加方式。</li><li>当某个应用端连接多个RDS时，所有连接该应用端的RDS关系型数据库都需要添加Agent。当其中一个RDS选择<span class="parmname" id="parmname20164124182217"><a name="parmname20164124182217"></a><a name="parmname20164124182217"></a>“安装节点类型”</span>后，其余RDS添加Agent时，选择<span class="parmname" id="parmname1066911505229"><a name="parmname1066911505229"></a><a name="parmname1066911505229"></a>“选择已有Agent”</span>添加方式。详细操作请参见<a href="#li17692165032313">•“添加方式”选择“选择已有Agent”</a></li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
+<td class="cellrowborder" valign="top" width="38.77612238776123%" headers="mcps1.2.5.1.4 "><a name="ul1429005916219"></a><a name="ul1429005916219"></a><ul id="ul1429005916219"><li>在应用端添加Agent。</li><li>当某个应用端连接多个RDS时，所有连接该应用端的RDS关系型数据库都需要添加Agent。当其中一个RDS选择<span class="parmname" id="parmname20164124182217"><a name="parmname20164124182217"></a><a name="parmname20164124182217"></a>“安装节点类型”</span>后，其余RDS添加Agent时，选择<span class="parmname" id="parmname1066911505229"><a name="parmname1066911505229"></a><a name="parmname1066911505229"></a>“选择已有Agent”</span>添加方式。详细操作请参见<a href="#li17692165032313">•“添加方式”选择“选择已有Agent”</a></li><li>当多个应用端连接同一个RDS时，所有连接该RDS的应用端都需要添加Agent。</li></ul>
 </td>
 </tr>
 <tr id="row01451041229"><td class="cellrowborder" valign="top" width="16.328367163283673%" headers="mcps1.2.5.1.1 "><p id="p91462482214"><a name="p91462482214"></a><a name="p91462482214"></a>RDS关系型数据库</p>
@@ -259,6 +260,8 @@
     </td>
     <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p115421768411"><a name="p115421768411"></a><a name="p115421768411"></a>可选参数。<span class="parmname" id="parmname1734984517812"><a name="parmname1734984517812"></a><a name="parmname1734984517812"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue134916451082"><a name="parmvalue134916451082"></a><a name="parmvalue134916451082"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p1454215644116"><a name="p1454215644116"></a><a name="p1454215644116"></a>指待审计的应用端节点的CPU阈值，缺省值为<span class="parmvalue" id="parmvalue18165161114317"><a name="parmvalue18165161114317"></a><a name="parmvalue18165161114317"></a>“80”</span>。</p>
+    <div class="notice" id="note1820183335018"><a name="note1820183335018"></a><a name="note1820183335018"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p11820033115011"><a name="p11820033115011"></a><a name="p11820033115011"></a>当服务器的CPU超过设置的阈值，为了保证您业务的正常运行，Agent将自动关闭，停止运行。</p>
+    </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p6464224104012"><a name="p6464224104012"></a><a name="p6464224104012"></a>80</p>
     </td>
@@ -267,6 +270,8 @@
     </td>
     <td class="cellrowborder" valign="top" width="61.01%" headers="mcps1.2.4.1.2 "><p id="p3734613164114"><a name="p3734613164114"></a><a name="p3734613164114"></a>可选参数。<span class="parmname" id="parmname10159155016810"><a name="parmname10159155016810"></a><a name="parmname10159155016810"></a>“安装节点类型”</span>选择<span class="parmvalue" id="parmvalue121595501780"><a name="parmvalue121595501780"></a><a name="parmvalue121595501780"></a>“应用端”</span>时，可以配置该参数。</p>
     <p id="p2073551313415"><a name="p2073551313415"></a><a name="p2073551313415"></a>指待审计的应用端节点的内存阈值，缺省值为<span class="parmvalue" id="parmvalue11322142320434"><a name="parmvalue11322142320434"></a><a name="parmvalue11322142320434"></a>“80”</span>。</p>
+    <div class="notice" id="note106851122105215"><a name="note106851122105215"></a><a name="note106851122105215"></a><span class="noticetitle"> 须知： </span><div class="noticebody"><p id="p46858221526"><a name="p46858221526"></a><a name="p46858221526"></a>当服务器上的内存超过设置的阈值，为了保证您业务的正常运行，Agent将自动关闭，停止运行。</p>
+    </div></div>
     </td>
     <td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.4.1.3 "><p id="p84921627194013"><a name="p84921627194013"></a><a name="p84921627194013"></a>80</p>
     </td>
